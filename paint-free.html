@@ -1,0 +1,1385 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width" name="viewport">
+    <title>Hyundai - Slider test</title>
+    <style type="text/css">
+
+      /* Taking power control over styles */
+      table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      }
+      table td {
+      border-collapse: collapse;
+      }
+      body {
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      color: #7b858e;
+      font-family: HyundaiSansHead-Bold, Helvetica;
+      font-size: 14px;
+      mso-margin-top-alt: 0px;
+      mso-margin-bottom-alt: 0px;
+      mso-padding-alt: 0px 0px 0px 0px;
+      }
+      .ExternalClass,  .ExternalClass p,  .ExternalClass span,  .ExternalClass font,  .ExternalClass td,  .ExternalClass div {
+      line-height: 100%;
+      }
+      .ReadMsgBody {
+      width: 100%;
+      }
+      .ExternalClass {
+      width: 100%;
+      }
+      img {
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+      }
+      a img {
+      border: none;
+      }
+      html {
+      -webkit-text-size-adjust: none !important;
+      }
+
+      #outlook a {
+      padding: 0;/* Forces Outlook desktop to provide a "view in browser link" */
+      }
+      .ExternalClass .outlook-button {
+      padding: 7px 30px 9px !important;/* Outlook.com does not like line-height:0px => adjusting padding top/bottom on our bulletproof CTA button */
+      }
+
+    </style>
+    <!-- TARGETS Outlook 2007/2010/2013 !-->
+    <!--[if gte mso 9]>
+    <style type="text/css" media="all">
+      .outlook-button {
+      padding: 7px 30px 9px !important;
+      }
+    </style>
+    <![endif]-->
+    <!-- Carousel FALLBACK for Gmail Desktop !-->
+    <style type="text/css">
+      #first {
+      float: left;
+      }
+      #third {
+      float: left;
+      }
+      #second {
+      float: right;
+      }
+      * [summary=gmail] {
+      max-width: 600px !important;
+      width: 600px !important;
+      display: block !important;
+      max-height: 100% !important;
+      font-size: 12px !important;
+      line-height: 100% !important;
+      overflow: visible !important;
+      }
+      * [summary=gmail] div[char="first"] {
+      padding-top: 180px !important;
+      width: 49px !important;
+      max-width: 49px !important;
+      }
+      * [summary=gmail] div[char="first"],  * [summary=gmail] div[char="third"] {
+      float: left !important;
+      }
+      * [summary=gmail] div[char="second"] {
+      float: right !important;
+      padding-top: 180px !important;
+      width: 49px !important;
+      max-width: 49px !important;
+      }
+      * [summary=gmail] div[char="first"] img,  * [summary=gmail] div[char="second"] img {
+      width: 49px !important;
+      max-width: 49px !important;
+      }
+      /**Initial State**/
+      * [summary=gmail] div[char="third"] {
+      padding-left: 20px !important;
+      }
+      * [summary=gmail] div[char="third"] img[src*="protect2_1"] {
+      width: 475px !important;
+      max-width: 475px !important;
+      display: inline !important;
+      }
+      /**Hover effects**/
+      * [summary=gmail] div[char="first"]:hover ~ div:last-child img[src*="protect2_3"] {
+      padding-top: 1px !important;
+      max-width: 474px !important;
+      width: auto !important;
+      }
+      * [summary=gmail] div[char="first"]:hover ~ div:last-child img[src*="protect2_1"],  * [summary=gmail] div[char="first"]:hover ~ div:last-child img[src*="protect2_2"] {
+      display: none !important;
+      }
+      * [summary=gmail] div[char="second"]:hover ~ div:last-child img[src*="protect2_3"],  * [summary=gmail] div[char="second"]:hover ~ div:last-child img[src*="protect2_1"] {
+      display: none !important;
+      }
+      * [summary=gmail] div[char="second"]:hover ~ div:last-child img[src*="protect2_2"] {
+      padding-top: 1px !important;
+      max-width: 474px !important;
+      width: auto !important;
+      }
+      /*Gmail doesn't show desktop only content*/
+      * [summary=desktop-hide] {
+      display: none !important;
+      }
+      /**Safe guard that all non-Gmail email clients will ignore table**/
+      .gmail {
+      display: none !important;
+      }
+    </style>
+    <style type="text/css">
+      /*Show fallback content */
+      #desktop-hide {
+      display: block !important;
+      }
+      /*Hide webkit only section in Outlook 07-13*/
+      #webkit-only,
+      #webkit-only table,
+      #webkit-only tr,
+      #webkit-only td,
+      #webkit-only img,
+      #webkit-only label,
+      #webkit-only input {
+      mso-hide: all;
+      }
+      /**Fix issue with GalleryIcons on iphone 5 & 4*/
+      @media all and (max-width: 321px) {
+      #galleryIcons > table {
+      width: 100% !important;
+      }
+      #galleryIcons td {
+      padding: 0 !important;
+      text-align: center !important;                
+      }
+      }
+      /**Target webkit only*/
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+            /* Preheader will show for all non-iOS who can't fully enjoy the carousel */
+            .preheader {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            color: transparent;
+            height: 0;
+            width: 0;
+            line-height: 0px;
+            font-size: 0px
+            }
+            .play-button {
+            padding-top: 1px !important
+            }
+            /*Hide fallback content*/
+            #desktop-hide {
+            display: none !important;
+            }
+            /*Show webkit content*/
+            #webkit-only {
+            display: block !important;
+            max-height: none !important;
+            padding-bottom: 10px !important;
+            }
+            /*And here we are.... */
+            .webFont21{
+            font-size: 22px !important;
+            }
+
+            /* Styling the gallery */
+            /* -webkit-tap-highlight-color set to white/transparent will remove the grey flash on iPhone / iPad on tap (hover)*/
+            #galleryIcons table {
+            position: absolute;
+            width: 382px ;
+            bottom: 0;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+            #galleryImgs .bodyImgs img:not(.initialState) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            }
+            #galleryImgs img.one,
+            #galleryImgs img.two,
+            #galleryImgs img.three,
+            #galleryImgs img.four,
+            #galleryImgs img.five,
+            #galleryImgs img.six
+            {
+            display: block !important;
+            opacity: 0;
+            }
+            label {
+            cursor: pointer;
+            }
+            label.left,
+            #galleryIcons td:first-child {
+            /*padding-left: 10px;*/
+            }
+            label.right,
+            #galleryIcons td:last-child {
+            /*padding-right: 10px;*/
+            }
+            /**Set initial States of labels**/
+            #galleryImgs img {
+            transition: 0.6s opacity;
+            }
+            #galleryIcons div {
+            -webkit-backface-visibility: hidden;
+            }
+            div.one {
+            width: 56px;
+            height: 56px;
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/passion-red-thumb.jpg');
+            background-position: -56px 0px;
+            background-repeat: no-repeat;
+            background-size: 112px 56px;
+            }
+            div.two {
+            width: 56px;
+            height: 56px;
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/sleek-silver-thumb.jpg');
+            background-position: -56px 0px;
+            background-repeat: no-repeat;
+            background-size: 112px 56px;
+            }
+            div.three {
+            width: 56px;
+            height: 56px;
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/iced-coffee-thumb.jpg');
+            background-position: -56px 0px;
+            background-repeat: no-repeat;
+            background-size: 112px 56px;
+            }
+
+            div.four {
+            width: 56px;
+            height: 56px;
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/aqua-sparkling-thumb.jpg');
+            background-position: -56px 0px;
+            background-repeat: no-repeat;
+            background-size: 112px 56px;
+            }
+            div.five {
+            width: 56px;
+            height: 56px;
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/stardust-grey-thumb.jpg');
+            background-position: -56px 0px;
+            background-repeat: no-repeat;
+            background-size: 112px 56px;
+            }
+            div.six {
+            width: 56px;
+            height: 56px;
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/phantom-black-thumb.jpg');
+            background-position: -56px 0px;
+            background-repeat: no-repeat;
+            background-size: 112px 56px;
+            }
+
+
+            div.one:hover,
+            div.two:hover,
+            div.three:hover,
+            div.four:hover,
+            div.five:hover,
+            div.six:hover {
+            background-position: 0px 0px;
+            }
+            /*Creating initial State through a pre-checked radio button*/
+            #initialState:checked ~ #gallery #galleryIcons div.one {
+            background-position: 0px 0px;
+            }
+            #initialState:checked ~ #gallery #galleryImgs label.one {
+            display: block !important;
+            }
+            /*Hover State*/
+            /*Have to increase selector inheritance (Hence multiple ID's) to over ride checkbox default states*/
+            #container table#gallery td#galleryIcons div.one:hover,
+            #container table#gallery td#galleryIcons div.two:hover,
+            #container table#gallery td#galleryIcons div.three:hover,
+            #container table#gallery td#galleryIcons div.four:hover,
+            #container table#gallery td#galleryIcons div.five:hover,
+            #container table#gallery td#galleryIcons div.six:hover  
+            {
+            background-position: 0px 0px;
+            }
+            /**Hover state for icons not being hovered on so current icon decreases in size**/
+            #initialState:checked ~ #gallery #galleryIcons:hover div.one,
+            #icon1:checked ~ #gallery #galleryIcons:hover div.one,
+            #icon2:checked ~ #gallery #galleryIcons:hover div.two,
+            #icon3:checked ~ #gallery #galleryIcons:hover div.three,
+            #icon4:checked ~ #gallery #galleryIcons:hover div.four,
+            #icon5:checked ~ #gallery #galleryIcons:hover div.five,
+            #icon6:checked ~ #gallery #galleryIcons:hover div.six
+             {
+            background-position: -56px 0px;
+            }
+            #initialState:checked ~ #gallery #galleryIcons:hover div.one:hover,
+            #icon1:checked ~ #gallery #galleryIcons:hover div.one:hover,
+            #icon2:checked ~ #gallery #galleryIcons:hover div.two:hover,
+            #icon3:checked ~ #gallery #galleryIcons:hover div.three:hover, 
+            #icon4:checked ~ #gallery #galleryIcons:hover div.four:hover,
+            #icon5:checked ~ #gallery #galleryIcons:hover div.five:hover,
+            #icon6:checked ~ #gallery #galleryIcons:hover div.six:hover 
+            {
+            background-position: 0px 0px;
+            }
+            /********Creating functionality************/
+
+
+            /*Icon Product 1*/
+                #icon1:checked ~ #gallery #galleryImgs img.initialState,
+                #icon1:checked ~ #gallery #galleryImgs img.two,
+                #icon1:checked ~ #gallery #galleryImgs img.three, 
+                #icon1:checked ~ #gallery #galleryImgs img.four,
+                #icon1:checked ~ #gallery #galleryImgs img.five,
+                #icon1:checked ~ #gallery #galleryImgs img.six 
+                {
+                opacity: 0;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                }
+                #icon1:checked ~ #gallery #galleryImgs img.one {
+                opacity: 1;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                }
+                #icon1:checked ~ #gallery #galleryIcons img.two,
+                #icon1:checked ~ #gallery #galleryIcons img.three,
+                #icon1:checked ~ #gallery #galleryIcons img.four,
+                #icon1:checked ~ #gallery #galleryIcons img.five,
+                #icon1:checked ~ #gallery #galleryIcons img.six 
+                {
+                background-position: -56px 0px;
+                }
+                #icon1:checked ~ #gallery #galleryIcons div.one {
+                background-position: 0px 0px;
+                }
+                #icon1:checked ~ #gallery #galleryImgs label.one {
+                display: block !important;
+                }
+
+            /*Icon Product 2*/
+                  #icon2:checked ~ #gallery #galleryImgs img.initialState,
+                  #icon2:checked ~ #gallery #galleryImgs img.one,
+                  #icon2:checked ~ #gallery #galleryImgs img.three, 
+                  #icon2:checked ~ #gallery #galleryImgs img.four,
+                  #icon2:checked ~ #gallery #galleryImgs img.five,
+                  #icon2:checked ~ #gallery #galleryImgs img.six 
+                  {
+                  opacity: 0;
+                  }
+                  #icon2:checked ~ #gallery #galleryImgs img.two {
+                  opacity: 1;
+                  -webkit-backface-visibility: hidden;
+                  }
+                  #icon2:checked ~ #gallery #galleryIcons img.one,
+                  #icon2:checked ~ #gallery #galleryIcons img.three,
+                  #icon2:checked ~ #gallery #galleryIcons img.four,
+                  #icon2:checked ~ #gallery #galleryIcons img.five,
+                  #icon2:checked ~ #gallery #galleryIcons img.six 
+                  {
+                  background-position: -56px 0px;
+                  }
+                  #icon2:checked ~ #gallery #galleryIcons div.two {
+                  background-position: 0px 0px;
+                  }
+                  #icon2:checked ~ #gallery #galleryImgs label.two {
+                  display: block !important;
+                  }
+
+            /*Icon Product 3*/
+                  #icon3:checked ~ #gallery #galleryImgs img.initialState,
+                  #icon3:checked ~ #gallery #galleryIcons img.one,
+                  #icon3:checked ~ #gallery #galleryIcons img.two,
+                  #icon3:checked ~ #gallery #galleryIcons img.four,
+                  #icon3:checked ~ #gallery #galleryIcons img.five,
+                  #icon3:checked ~ #gallery #galleryIcons img.six 
+                  {
+                  opacity: 0;
+                  }
+                  #icon3:checked ~ #gallery #galleryImgs img.three {
+                  opacity: 1;
+                  -webkit-backface-visibility: hidden;
+                  }
+                  #icon3:checked ~ #gallery #galleryIcons img.one,
+                  #icon3:checked ~ #gallery #galleryIcons img.two,
+                  #icon3:checked ~ #gallery #galleryIcons img.four,
+                  #icon3:checked ~ #gallery #galleryIcons img.five,
+                  #icon3:checked ~ #gallery #galleryIcons img.six 
+                  {
+                  background-position: -56px 0px;
+                  }
+                  #icon3:checked ~ #gallery #galleryIcons div.three {
+                  background-position: 0px 0px;
+                  }
+                  #icon3:checked ~ #gallery #galleryImgs label.three {
+                  display: block !important;
+                  }
+
+            /*Icon Product 4*/
+                  #icon4:checked ~ #gallery #galleryImgs img.initialState,
+                  #icon4:checked ~ #gallery #galleryImgs img.one,
+                  #icon4:checked ~ #gallery #galleryImgs img.two,
+                  #icon4:checked ~ #gallery #galleryImgs img.three,
+                  #icon4:checked ~ #gallery #galleryImgs img.five,
+                  #icon4:checked ~ #gallery #galleryImgs img.six 
+                  {
+                  opacity: 0;
+                  -webkit-backface-visibility: hidden;
+                  backface-visibility: hidden;
+                  }
+                  #icon4:checked ~ #gallery #galleryImgs img.four {
+                  opacity: 1;
+                  -webkit-backface-visibility: hidden;
+                  backface-visibility: hidden;
+                  }
+                  #icon4:checked ~ #gallery #galleryIcons img.one,
+                  #icon4:checked ~ #gallery #galleryIcons img.two,
+                  #icon4:checked ~ #gallery #galleryIcons img.three,
+                  #icon4:checked ~ #gallery #galleryIcons img.five,
+                  #icon4:checked ~ #gallery #galleryIcons img.six 
+                  {
+                  background-position: -56px 0px;
+                  }
+
+                  #icon4:checked ~ #gallery #galleryIcons div.four {
+                  background-position: 0px 0px;
+                  }
+                  #icon4:checked ~ #gallery #galleryImgs label.four {
+                  display: block !important;
+                  }
+
+
+            /*Icon Product 5*/
+                  #icon5:checked ~ #gallery #galleryImgs img.initialState,
+                  #icon5:checked ~ #gallery #galleryImgs img.one,
+                  #icon5:checked ~ #gallery #galleryImgs img.two,
+                  #icon5:checked ~ #gallery #galleryImgs img.three,
+                  #icon5:checked ~ #gallery #galleryImgs img.four,
+                  #icon5:checked ~ #gallery #galleryImgs img.six 
+                  {
+                  opacity: 0;
+                  }
+                  #icon5:checked ~ #gallery #galleryImgs img.five {
+                  opacity: 1;
+                  -webkit-backface-visibility: hidden;
+                  }
+                  #icon5:checked ~ #gallery #galleryIcons img.one,
+                  #icon5:checked ~ #gallery #galleryIcons img.two,
+                  #icon5:checked ~ #gallery #galleryIcons img.three,
+                  #icon5:checked ~ #gallery #galleryIcons img.four,
+                  #icon5:checked ~ #gallery #galleryIcons img.six {
+                  background-position: -83px 0px;
+                  }
+                  #icon5:checked ~ #gallery #galleryIcons div.five {
+                  background-position: 0px 0px;
+                  }
+                  #icon5:checked ~ #gallery #galleryImgs label.five {
+                  display: block !important;
+                  }
+
+
+
+            /*Icon Product 6*/
+                  #icon6:checked ~ #gallery #galleryImgs img.initialState,
+                  #icon6:checked ~ #gallery #galleryImgs img.one,
+                  #icon6:checked ~ #gallery #galleryImgs img.two,
+                  #icon6:checked ~ #gallery #galleryImgs img.three,
+                  #icon6:checked ~ #gallery #galleryImgs img.four,
+                  #icon6:checked ~ #gallery #galleryImgs img.five 
+                  {
+                  opacity: 0;
+                  }
+                  #icon6:checked ~ #gallery #galleryImgs img.six {
+                  opacity: 1;
+                  }
+                  #icon6:checked ~ #gallery #galleryIcons img.one,
+                  #icon6:checked ~ #gallery #galleryIcons img.two,
+                  #icon6:checked ~ #gallery #galleryIcons img.three,
+                  #icon6:checked ~ #gallery #galleryIcons img.four,
+                  #icon6:checked ~ #gallery #galleryIcons img.five {
+                  background-position: -83px 0px;
+                  }
+                  #icon6:checked ~ #gallery #galleryIcons div.six {
+                  background-position: 0px 0px;
+                  }
+                  #icon6:checked ~ #gallery #galleryImgs label.six {
+                  display: block !important;
+                  }
+
+
+
+
+
+
+      }
+      /* Global style for mobile devices */
+      @media only screen and (max-width: 736px) {
+            #galleryIcons table {
+            left: 10px;
+            }
+            .mobileOn {
+            display: block!important;
+            height: auto!important;
+            width: 100%!important;
+            max-height: inherit!important;
+            }
+            .hide {
+            display: none !important;
+            }
+            .show{
+            display: block !important; 
+            }
+            td[class="icons"] {
+            height: 164px !important;
+            }
+            .pb0 {
+            padding-bottom: 0px !important
+            }
+            .cb {
+            line-height: 19px !important;
+            text-align: left !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            }
+            .play-button {
+            padding-top: 1px !important
+            }
+            .mobile {
+            display: block !important;
+            width: 100% !important
+            }
+            .mobile80{
+            width: 80% !important;
+            }
+            .mobile-hide {
+            display: none !important
+            }
+            .desktop-hide {
+            display: none !important;
+            }
+            .cta-bottom {
+            display: block !important;
+            max-height: 100% !important;
+            font-size: 12px !important;
+            line-height: 100% !important;
+            overflow: visible !important;
+            padding-bottom: 35px !important
+            }
+            .h1 {
+            padding-top: 25px !important;
+            }
+            .pb5 {
+            padding-bottom: 5px !important;
+            }
+            .pt30 {
+            padding-top: 30px !important;
+            }
+            .tl{
+            text-align: left !important;
+            }
+      
+      }
+
+
+
+      /* Target iPhone 5 and less */
+      @media only screen and (min-width: 219px) and (max-width: 374px) {
+            #galleryIcons table {
+            left: 0px;
+            }
+            .h1 {
+            font-size: 30px !important;
+            line-height: 33px !important;
+            padding-left: 5px !important;
+            padding-right: 5px !important
+            }
+            .sl {
+            font-size: 16px !important;
+            line-height: 18px !important;
+            padding-top: 3px !important;
+            padding-left: 6px !important;
+            padding-right: 6px !important
+            }
+            .thb {
+            width: 80% !important;
+            }
+            .pb10 {
+            padding-bottom: 10px !important;
+            }
+            .pb20 {
+            padding-bottom: 20px !important;
+            padding-top: 0px !important;
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            }
+            .pc {
+            padding: 30px 0 5px !important;
+            }
+            .wc {
+            width: 85% !important;
+            }
+            .wf {
+            width: 100% !important;
+            }
+            .h10{
+            height: 10px !important;
+            display: block;
+            }
+            .w106{
+                  width: 106px !important;
+            }
+            .webFont21{
+                  font-size: 22px !important;
+            }
+            .w80 {
+            width: 80px !important;
+            height: auto !important;
+            }
+            .w150 {
+            width: 220px !important;
+            height: auto !important;
+            }
+            .w160 {
+            width: 170px !important;
+            height: auto !important;
+            }
+            .w170 {
+            width: 220px !important;
+            height: auto !important;
+            top: 90px !important;
+            }
+            .pbGallery {
+            padding-bottom: 130px !important;
+            }
+            #galleryIcons table {
+            left: 10px;
+            width: 320px !important;
+            }
+            .pt20{
+            padding-top: 20px !important;
+            }
+            .pt10{
+            padding-top: 10px !important;
+            }
+            .tl{
+            text-align: left !important;
+            }
+
+            .w120{
+            width: 120px !important;
+            }
+            div.one,
+            div.two,
+            div.three,
+            div.four,
+            div.five,
+            div.six {
+            width: 70px;
+            height: 70px;
+            background-position: -70px 0px;
+            background-repeat: no-repeat;
+            background-size: 140px 70px;
+            }
+
+            div.one:focus,
+            div.two:focus,
+            div.three:focus,
+            div.four:focus,
+            div.five:focus,
+            div.six:focus {
+            background-position: 0px 0px;
+            }
+
+            #initialState:checked ~ #gallery #galleryIcons:hover div.one,
+            #icon1:checked ~ #gallery #galleryIcons:hover div.one,
+            #icon2:checked ~ #gallery #galleryIcons:hover div.two,
+            #icon3:checked ~ #gallery #galleryIcons:hover div.three,
+            #icon4:checked ~ #gallery #galleryIcons:hover div.four,
+            #icon5:checked ~ #gallery #galleryIcons:hover div.five,
+            #icon6:checked ~ #gallery #galleryIcons:hover div.six{
+            background-position: -70px 0px;
+            }
+
+            #container table#gallery td#galleryIcons div.one:hover,
+            #container table#gallery td#galleryIcons div.two:hover,
+            #container table#gallery td#galleryIcons div.three:hover,
+            #container table#gallery td#galleryIcons div.four:hover,
+            #container table#gallery td#galleryIcons div.five:hover,
+            #container table#gallery td#galleryIcons div.six:hover{
+            background-position: 0px 0px;
+            }
+            /*Icons*/
+            #icon1:checked ~ #gallery #galleryIcons div.one,
+            #icon2:checked ~ #gallery #galleryIcons div.two,
+            #icon3:checked ~ #gallery #galleryIcons div.three,
+            #icon4:checked ~ #gallery #galleryIcons div.four,
+            #icon5:checked ~ #gallery #galleryIcons div.five,
+            #icon6:checked ~ #gallery #galleryIcons div.six {
+            background-position: -70px 0px;
+            }
+            #icon1:checked ~ #gallery #galleryIcons div.one,
+            #icon2:checked ~ #gallery #galleryIcons div.two,
+            #icon3:checked ~ #gallery #galleryIcons div.three,
+            #icon4:checked ~ #gallery #galleryIcons div.four,
+            #icon5:checked ~ #gallery #galleryIcons div.five,
+            #icon6:checked ~ #gallery #galleryIcons div.six
+            {
+            background-position: 0px 0px;
+            }
+
+
+      }
+      /* Target iPhone 6 */
+      @media only screen and (min-width: 375px) and (max-width: 415px) {
+      #galleryIcons table {
+      left: 0px;
+      }
+      .w106{
+            width: 106px !important;
+      }
+      #galleryIcons table{
+      width: 360px !important;
+      }
+      .h1 {
+      font-size: 35px !important;
+      line-height: 37px !important;
+      }
+      .sl {
+      font-size: 17px !important;
+      line-height: 20px !important;
+      padding-top: 3px;
+      }
+      .thb {
+      width: 300px !important;
+      }
+      .pb10 {
+      padding-bottom: 10px !important;
+      }
+      .pb20 {
+      padding-bottom: 20px !important;
+      padding-top: 0px !important;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+      }
+      .pc {
+      padding: 30px 0 5px !important;
+      }
+      .wc {
+      width: 85% !important;
+      }
+      .w80 {
+      width: 80px !important;
+      height: auto !important;
+      }
+      .w150 {
+      width: 245px !important;
+      height: auto !important;
+      }
+      .w160 {
+      width: 161px !important;
+      height: auto !important;
+      }
+      .w170 {
+      width: 250px !important;
+      height: auto !important;
+      top: 100px !important;
+      }
+      .h10{
+      height: 10px !important;
+      display: block;
+      }
+      .pt20{
+      padding-top: 20px !important;
+      }
+      .w120{
+      width: 120px !important;
+      }
+            .pt10{
+            padding-top: 10px !important;
+            }
+            div.one,
+            div.two,
+            div.three,
+            div.four,
+            div.five,
+            div.six {
+            width: 70px;
+            height: 70px;
+            background-position: -70px 0px;
+            background-repeat: no-repeat;
+            background-size: 140px 70px;
+            }
+            div.one {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/passion-red-thumb.jpg');
+            }
+            div.two {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/sleek-silver-thumb.jpg');
+            }
+            div.three {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/iced-coffee-thumb.jpg');
+            }
+            div.four {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/aqua-sparkling-thumb.jpg');
+            }
+            div.five {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/stardust-grey-thumb.jpg');
+            }
+            div.six {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/phantom-black-thumb.jpg');
+            }
+
+
+     
+            div.one:focus,
+            div.two:focus,
+            div.three:focus,
+            div.four:focus,
+            div.five:focus,
+            div.six:focus {
+            background-position: 0px 0px;
+            }
+            #initialState:checked ~ #gallery #galleryIcons:hover div.one,
+            #icon1:checked ~ #gallery #galleryIcons:hover div.one,
+            #icon2:checked ~ #gallery #galleryIcons:hover div.two,
+            #icon3:checked ~ #gallery #galleryIcons:hover div.three,
+            #icon4:checked ~ #gallery #galleryIcons:hover div.four,
+            #icon5:checked ~ #gallery #galleryIcons:hover div.five,
+            #icon6:checked ~ #gallery #galleryIcons:hover div.six{
+            background-position: -70px 0px;
+            }
+            #container table#gallery td#galleryIcons div.one:hover,
+            #container table#gallery td#galleryIcons div.two:hover,
+            #container table#gallery td#galleryIcons div.three:hover,
+            #container table#gallery td#galleryIcons div.four:hover,
+            #container table#gallery td#galleryIcons div.five:hover,
+            #container table#gallery td#galleryIcons div.six:hover{
+            background-position: 0px 0px;
+            }
+            /*Icons*/
+            #icon1:checked ~ #gallery #galleryIcons div.two,
+            #icon2:checked ~ #gallery #galleryIcons div.three,
+            #icon3:checked ~ #gallery #galleryIcons div.one,
+            #icon4:checked ~ #gallery #galleryIcons div.four,
+            #icon5:checked ~ #gallery #galleryIcons div.five,
+            #icon6:checked ~ #gallery #galleryIcons div.six {
+            background-position: -70px 0px;
+            }
+            #icon1:checked ~ #gallery #galleryIcons div.one,
+            #icon2:checked ~ #gallery #galleryIcons div.two,
+            #icon3:checked ~ #gallery #galleryIcons div.three,
+            #icon4:checked ~ #gallery #galleryIcons div.four,
+            #icon5:checked ~ #gallery #galleryIcons div.five,
+            #icon5:checked ~ #gallery #galleryIcons div.six
+            {
+            background-position: 0px 0px;
+            }
+      }
+      /* Target iPhone 6+ */
+      @media only screen and (min-width: 414px) and (max-width: 736px) {
+          .thb {
+          width: 310px !important;
+          }
+          .h1 {
+          font-size: 40px !important;
+          line-height: 42px !important;
+          }
+          .right {
+          display: none !important;
+          }
+          .sl {
+          font-size: 19px !important;
+          line-height: 21px !important;
+          padding-top: 3px;
+          }
+          .pb10 {
+          padding-bottom: 10px !important;
+          }
+          .pb20 {
+          padding-bottom: 20px !important;
+          padding-top: 0px !important;
+          padding-right: 0px !important;
+          padding-left: 0px !important;
+          }
+          .pc {
+          padding: 30px 0 5px !important;
+          }
+          .wc {
+          width: 360px !important;
+          }
+          .w80 {
+          width: 90px !important;
+          height: auto !important;
+          }
+          .w150 {
+          width: 260px !important;
+          height: auto !important;
+          }
+          .w160 {
+          width: 200px !important;
+          height: auto !important;
+          }
+          .w170 {
+          width: 290px !important;
+          height: auto !important;
+          top: 100px !important;
+          }
+          .h10{
+          height: 10px !important;
+          display: block;
+          }
+
+          #galleryIcons table{
+            width: 360px !important;
+            left: 0;
+          }
+
+            div.one,
+            div.two,
+            div.three,
+            div.four,
+            div.five,
+            div.six {
+            width: 70px;
+            height: 70px;
+            background-position: -70px 0px;
+            background-repeat: no-repeat;
+            background-size: 140px 70px;
+            }
+            div.one {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/passion-red-thumb.jpg');
+            }
+            div.two {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/sleek-silver-thumb.jpg');
+            }
+            div.three {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/iced-coffee-thumb.jpg');
+            }
+            div.four {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/aqua-sparkling-thumb.jpg');
+            }
+            div.five {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/stardust-grey-thumb.jpg');
+            }
+            div.six {
+            background-image: url('https://paragoncc.github.io/77973-Free_Paint/images/phantom-black-thumb.jpg');
+            }
+
+
+     
+            div.one:focus,
+            div.two:focus,
+            div.three:focus,
+            div.four:focus,
+            div.five:focus,
+            div.six:focus {
+            background-position: 0px 0px;
+            }
+            #initialState:checked ~ #gallery #galleryIcons:hover div.one,
+            #icon1:checked ~ #gallery #galleryIcons:hover div.one,
+            #icon2:checked ~ #gallery #galleryIcons:hover div.two,
+            #icon3:checked ~ #gallery #galleryIcons:hover div.three,
+            #icon4:checked ~ #gallery #galleryIcons:hover div.four,
+            #icon5:checked ~ #gallery #galleryIcons:hover div.five,
+            #icon6:checked ~ #gallery #galleryIcons:hover div.six{
+            background-position: -70px 0px;
+            }
+            #container table#gallery td#galleryIcons div.one:hover,
+            #container table#gallery td#galleryIcons div.two:hover,
+            #container table#gallery td#galleryIcons div.three:hover,
+            #container table#gallery td#galleryIcons div.four:hover,
+            #container table#gallery td#galleryIcons div.five:hover,
+            #container table#gallery td#galleryIcons div.six:hover{
+            background-position: 0px 0px;
+            }
+            /*Icons*/
+            #icon1:checked ~ #gallery #galleryIcons div.one,
+            #icon2:checked ~ #gallery #galleryIcons div.two,
+            #icon3:checked ~ #gallery #galleryIcons div.three,
+            #icon4:checked ~ #gallery #galleryIcons div.four,
+            #icon5:checked ~ #gallery #galleryIcons div.five,
+            #icon6:checked ~ #gallery #galleryIcons div.six {
+            background-position: -70px 0px;
+            }
+            #icon1:checked ~ #gallery #galleryIcons div.one,
+            #icon2:checked ~ #gallery #galleryIcons div.two,
+            #icon3:checked ~ #gallery #galleryIcons div.three,
+            #icon4:checked ~ #gallery #galleryIcons div.four,
+            #icon5:checked ~ #gallery #galleryIcons div.five,
+            #icon6:checked ~ #gallery #galleryIcons div.six
+            {
+            background-position: 0px 0px;
+            }
+
+      }
+          @media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+            .iphone{
+                display: none !important;
+            }
+        }
+
+            @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3 and (orientation: portrait) { 
+            .iphone{
+                display: none !important;
+            }
+
+        }
+    </style>
+      <style type="text/css">
+            @media screen {
+                  @font-face {
+                      font-family: 'HyundaiSansHead-Bold';
+                      font-style: normal;
+                      font-weight: 400;
+                      src: url(https://use.typekit.net/af/6d80a1/00000000000000003b9aefb8/27/l?subset_id=1&fvd=n7&v=3) format('woff');
+                  }
+                  @font-face {
+                      font-family: 'HyundaiSansHead-Regular';
+                      src: url(https://use.typekit.net/af/be3421/00000000000000003b9aefb8/27/l?subset_id=1&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/be3421/00000000000000003b9aefb8/27/d?subset_id=1&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/be3421/00000000000000003b9aefb8/27/a?subset_id=1&fvd=n7&v=3) format("opentype");
+                      font-weight: 400;
+                      font-style: normal;
+                  }
+                  @font-face {
+                      font-family: 'HyundaiSansHead-Light';
+                      src: url(https://use.typekit.net/af/b87a4f/00000000000000003b9aefbc/27/l?subset_id=1&fvd=n3&v=3) format("woff2"), url(https://use.typekit.net/af/b87a4f/00000000000000003b9aefbc/27/d?subset_id=1&fvd=n3&v=3) format("woff"), url(https://use.typekit.net/af/b87a4f/00000000000000003b9aefbc/27/a?subset_id=1&fvd=n3&v=3) format("opentype");
+                      font-weight: 300;
+                      font-style: normal;
+                  }
+            }
+      </style>
+    </style>
+  </head>
+  <body alink="#002c5f" bgcolor="#FFFFFF" class="font-size-14px" link="#002c5f" style="-webkit-text-size-adjust: none; color: #e0e6e6; font-family: 'HyundaiSansHead-Bold',Helvetica; font-size: 14px; -ms-text-size-adjust: 100%; mso-margin-top-alt: 0px; mso-margin-bottom-alt: 0px; mso-padding-alt: 0px 0px 0px 0px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: #f6f3f2;" text="#000000">
+    
+    <div style="position: relative; width:100%; background-color: #f6f3f2; margin-left:auto; margin-right:auto;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" id="container" style="background-color: #f6f3f2; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 700px;">
+        <tr>
+          <td align="center" style="border-collapse: collapse;" width="100%" bgcolor="#ffffff">
+            <div style="position: relative; width: 100%; max-width: 700px; margin: 0 auto; ">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <tr>
+                  <td align="center" style="border-collapse: collapse" width="100%">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                      
+                      <tr>
+                        <td align="center" valign="bottom" class="width_full stack_block pt15 center_text" style="font-family: Arial, sans-serif;font-size:10px;line-height:normal;color:#000000; padding: 20px 0">
+                          <a href="http://" target="_blank" style="color:#000000;">View in browser</a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center" valign="top" class="width_full stack_block">
+                          <a href="http://www.hyundai.co.uk/" target="_blank"><img src="https://paragoncc.github.io/77973-Free_Paint/images/hyundai-logo.jpg" width="223" style="margin:0; padding:0; border:none; display:block;" border="0" class="    center_mob w120" alt="" /></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td align="center" style="font-family: 'HyundaiSansHead-Bold', Arial, sans-serif; color: #002c5f;" class="pt10">
+                          <img src="https://paragoncc.github.io/77973-Free_Paint/images/freepaint.gif" alt="" width="600" style="display: block; height: auto" class="mobile80">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--Webkit Only-->
+
+              <!-- HIDE ON AOL START -->
+
+              <div id="webkit-only" class="mobile" style="font-size: 0; max-height: 0; overflow: hidden; display: none">
+                
+                <!-- Carousel - This is where the magic hapens -->
+                <input checked id="initialState" name="myradio" style="display:none;" type="radio">
+                <input id="icon1" name="myradio" style="display:none;" type="radio">
+                <input id="icon2" name="myradio" style="display:none;" type="radio">
+                <input id="icon3" name="myradio" style="display:none;" type="radio">
+                <input id="icon4" name="myradio" style="display:none;" type="radio">
+                <input id="icon5" name="myradio" style="display:none;" type="radio">
+                <input id="icon6" name="myradio" style="display:none;" type="radio">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" id="gallery" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative;">
+                  <tr>
+                    <td width="382" align="center" id="galleryIcons" class="★">
+                      <table width="382" border="0" cellpadding="0" cellspacing="0" class="thb hide" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+
+                        <tr>
+                          <td align="center" colspan="6" class="h10" style="font-family: Arial, sans-serif; line-height: 23px; font-size: 14px; color: #656565; text-align: center;">
+                                Tap your favourite
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" colspan="6" height="10">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="one">
+                            <label class="icon" for="icon1">
+                              <div class="one"></div>
+                            </label>
+                          </td>
+                          <td class="two">
+                            <label class="icon" for="icon2">
+                              <div class="two"></div>
+                            </label>
+                          </td>
+                          <td class="three">
+                            <label class="icon" for="icon3">
+                              <div class="three"></div>
+                            </label>
+                          </td>
+                          <td class="four">
+                            <label class="icon" for="icon4">
+                              <div class="four"></div>
+                            </label>
+                          </td>
+                          <td class="five">
+                            <label class="icon" for="icon5">
+                              <div class="five"></div>
+                            </label>
+                          </td>
+                          <td class="six">
+                            <label class="icon" for="icon6">
+                              <div class="six"></div>
+                            </label>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if !mso]><!-- -->
+                      <div class="mobileOn" style="font-size: 0; width:0; max-height: 0; overflow: hidden; display: none; ">
+                         <table width="320" cellspacing="0" cellpadding="0" border="0" class="mobile mobileOn" align="center"  style="mso-hide:all;display:none;max-height:0px;overflow:hidden; display:table!important;">
+                            <tr>
+                              <td align="center" style="font-family: Arial, sans-serif; line-height: 23px; font-size: 14px; color: #656565; text-align: center;">
+                              </td>
+                              <td align="center" class="w106"  style="font-family: Arial, sans-serif; line-height: 23px; font-size: 12px; color: #656565; text-align: center;">
+                                    Tap your favourite
+                              </td>
+                              <td align="center" style="font-family: Arial, sans-serif; line-height: 23px; font-size: 14px; color: #656565; text-align: center;">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" class="h10">
+                              </td>
+                            </tr>
+                            
+                            <tr>
+                             <td align="center" class="one">
+                               <label class="icon" for="icon1">
+                                 <div class="one"></div>
+                               </label>
+                             </td>
+                             <td align="center" class="two">
+                               <label class="icon" for="icon2">
+                                 <div class="two"></div>
+                               </label>
+                             </td>
+                             <td align="center" class="three">
+                               <label class="icon" for="icon3">
+                                 <div class="three"></div>
+                               </label>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td align="center" colspan="3" class="h10">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" class="four">
+                                <label class="icon" for="icon4">
+                                  <div class="four"></div>
+                                </label>
+                              </td>
+                              <td align="center" class="five" >
+                                <label class="icon" for="icon5">
+                                  <div class="five"></div>
+                                </label>
+                              </td>
+                              <td align="center" class="six">
+                                <label class="icon" for="icon6">
+                                  <div class="six"></div>
+                                </label>
+                              </td>
+
+                            </tr>
+                         </table>
+                      </div>
+                      <!--<![endif]-->
+
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td id="galleryImgs" valign="top">
+                      <table class="mobile-hide" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+                        <tr>
+                          <td align="center" class="bodyImgs" style="position: relative; width: 620px" valign="middle">
+                            <img class="initialState w150" src="https://paragoncc.github.io/77973-Free_Paint/images/freepaint.gif" style="max-width: 620px; width: 100%; height: auto; padding-bottom: 20px" width="620" >
+                            <img class="one w150" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-red.jpg" style="max-width: 620px; width: 100%; height: auto; padding-bottom: 20px" width="620" >
+                            <img class="two w160" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-silver.jpg" style="max-width: 620px; width: 100%; height: auto; padding-bottom: 20px" width="620" >
+                            <img class="three w170" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-coffee.jpg" style="max-width: 620px; width: 100%; height: auto; padding-bottom: 20px" width="620" >
+                            <img class="four w150" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-aqua.jpg" style="max-width: 620px; width: 100%; height: auto; padding-bottom: 20px" width="620" >
+                            <img class="five w160" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-grey.jpg" style="max-width: 620px; width: 100%; height: auto; padding-bottom: 20px" width="620" >
+                            <img class="six w170" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-black.jpg" style="max-width: 620px; width: 100%; height: auto; padding-bottom: 20px" width="620" >
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="mobile" border="0" cellpadding="0" cellspacing="0" style="display: none; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+                        <tr>
+                          <td align="center" class="bodyImgs" style="position: relative; width: 360px" valign="middle">
+                              <img class="one" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-red.jpg" style="max-width: 360px; width: 100%; padding-bottom: 20px" width="360">
+                              <img class="two" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-silver.jpg" style="max-width: 360px; width: 100%; padding-bottom: 20px" width="360">
+                              <img class="three" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-coffee.jpg" style="max-width: 360px; width: 100%; padding-bottom: 20px" width="360">
+                              <img class="four" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-aqua.jpg" style="max-width: 360px; width: 100%; padding-bottom: 20px" width="360">
+                              <img class="five" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-grey.jpg" style="max-width: 360px; width: 100%; padding-bottom: 20px" width="360">
+                              <img class="six" src="https://paragoncc.github.io/77973-Free_Paint/images/i10-black.jpg" style="max-width: 360px; width: 100%; padding-bottom: 20px" width="360">
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="icons" height="80" style="font-size:0; line-height:0">&nbsp;</td>
+                  </tr>
+                </table>
+                <!-- /Gallery !--> 
+              </div>
+
+              <!-- HIDE ON AOL END -->
+
+
+
+              <!--<![endif]--> 
+
+              <!-- Fallback - No carousel but a sweet animated gif-->
+              <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="492" align="center" class="desktop-hide wc iphone" id="desktop-hide">
+                <tr>
+                  <td align="center" width="76%" class="iphone" style="position: relative; font-size: 20px; padding-top:30px"><img src="https://paragoncc.github.io/77973-Free_Paint/images/i10.gif" width="500" style="line-height: 285px; font-size: 350px; color:#002c5f" class="iphone wc" alt="?"></td>
+                </tr>
+               
+              </table>
+              <!-- // Fallback Gallery !--> 
+
+
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="700" style="width:700px; max-width: 700px">
+                <tr>
+                  <td>
+                    <![endif]-->
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="w90" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 550px !important;" width="100%">
+                      <tr>
+                        <td align="center" class="pb20 mobile webFont21" style="font-family:'HyundaiSansHead-Bold', Helvetica, Arial, sans-serif;  font-size:18px; color:#000000; padding: 15px 0px" width="100%">
+                              We've made the sporty <span style="display: none" class="show"></span>new i10 even more attractive.<br/> With free* pearl or metallic <span style="display: none" class="show"></span>paint.
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                </tr>
+              </table>
+              <![endif]--> 
+
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="700" style="width:700px; max-width: 700px">
+                <tr>
+                  <td>
+                    <![endif]-->
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="wc mobile" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;max-width:400px !important" width="400">
+                      <tr>
+                        <td align="center" class="pb20 mobile" style="font-family: Arial, sans-serif; line-height: 23px; font-size: 14px; color:#656565; padding: 15px 0 30px; text-align: left;" width="400">
+                              With six dazzling colours to choose from, picking the pearl or metallic paint^ for your new i10 might be tricky. Paying for it won’t though because we’ll refund your money. Whichever you choose, drive away a new i10 and your friends will definitely be Slightly Jealous Green with envy. Just bring this email with you to your local dealer &lt;dealer name&gt;.
+                        </td>
+                      </tr>
+
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                </tr>
+              </table>
+              <![endif]--> 
+
+              <!-- CTA displayed on mobile !-->
+              <div class="cta-bottom" >
+                <table align="center" class="wc" style="border:1px solid #60aad2; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-hide:all; background-color: #ffffff;max-width:400px !important " width="400">
+                  <tr>
+                    <td class="outlook-button" align="center" style=" color:#60aad2; font-family: 'HyundaiSansHead-Regular', Helvetica, Arial, sans-serif; font-size:14px;line-height: 33px; text-align:center; text-decoration:none; -webkit-text-size-adjust:none; ">
+                       Your Free Paint offer code
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="outlook-button" align="center" style=" color:#60aad2; font-family: 'HyundaiSansHead-Regular', Helvetica, Arial, sans-serif; font-size:20px;line-height: 33px; text-align:center; text-decoration:none; -webkit-text-size-adjust:none; ">
+                       XXXXX
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- / CTA displayed on mobile !--> 
+
+
+              <!--[if (gte mso 9)|(IE)]>
+              <table width="700" style="width:700px; max-width: 700px">
+                <tr>
+                  <td>
+                    <![endif]-->
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="wc mobile" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;max-width:400px !important" width="400">
+                      <tr>
+                        <td align="center" class="pb20 mobile" style="font-family: Arial, sans-serif;  font-size: 9px; line-height: 10px; color:#222222; padding: 30px 0 15px ; text-align: left;" width="400">
+                        ^Colours shown are representative only. Offer ends on 30th September 2017. If you’ve already ordered and want to take advantage of this offer, please contact your dealer to check eligibility.
+                        </td>
+                      </tr>
+
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                  </td>
+                </tr>
+              </table>
+              <![endif]--> 
+
+
+            
+
+
+
+
+
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- FOOTER -->
+      <div style="position: relative; width: 100%; max-width:400px !important; margin: 0 auto; ">
+      <table align="center" class="wc mobile" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt" width="100%">
+        <tr>
+          <td align="center" class="tl" style="border-collapse: collapse; color: #222222; font-family: arial; font-size: 9px; line-height: 10px; padding-bottom: 25px; padding-top: 20px; text-align: center">
+            *Terms and conditions apply. 
+            <br/>
+            ^Available on Premium SE model
+            <br/>
+            Hyundai Motor UK Ltd Registered Office: 728 London Road, High Wycombe,
+            <br/> Buckinghamshire, HP11 1HE. Company No. 05446560.
+            <br/>
+            <br/> To change your mailing preferences or unsubscribe, click <a href="http://" target="_blank" style="text-decoration:underline; color:#222222;">here</a>.
+            <br/>You may also unsubscribe by replying to this email with the word "unsubscribe" in the subject line.
+          </td>
+        </tr>
+      
+      </table>
+    </div>
+    <br>
+    <!-- /FOOTER -->
+  </body>
+</html>

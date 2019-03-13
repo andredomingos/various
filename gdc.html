@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <!--<![endif]-->
+
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta charset="utf-8" />
+    <title>NatWest</title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=false" name="viewport" />
+    <link href="{ImagePath}style_Oct15_new.css" rel="stylesheet" />
+    <link href="{ImagePath}mobile06122018-3.css" media="screen and (min-width:320px) and (max-width:1046px)" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script src="{ImagePath}html5shiv-printshiv.js"></script>
+    <script src="{ImagePath}html5shiv.js"></script>
+    <script src="{ImagePath}PIE_IE678.js"></script>
+    <script src="{ImagePath}custom-form-elements.js"></script>
+    <script src="{ImagePath}plugins.js"></script>
+    <script src="{ImagePath}jquery.placeholder.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+<script src="selectivizr-min.js"></script>
+<![endif]-->
+  </head>
+
+  <body>
+    <div class="topbar">
+      <div class="wrapper">
+        <a href="http://www.natwest.com/private.ashx?extcam=furl-private" target="_blank"><img src="{ImagePath}nw_logo.jpg" alt="" /></a>
+      </div>
+
+    </div>
+    <section class="wrapper">
+      <header>
+        <figure class="header_area">
+          <a href="http://www.natwest.com/private.ashx?extcam=furl-private" target="_blank">
+            <!-- <img alt="NatWest Private" class="logo" src="natwest_logo.jpg" /> -->
+          </a>
+        </figure>
+      </header>
+
+      <div class="clear">&#160;</div>
+      <!--Main content section-->
+
+      <section class="content">
+        <article class="introduction left">
+
+          <span style="font-weight: bold;"><h2 class="heading_text"></h2></span>
+          <p> Christmas is a time for gifts, so we're giving you the chance to win &pound;500 of John Lewis vouchers in our free prize draw. There are even three prizes of &pound;200 of John Lewis vouchers for runners-up.</p>
+          <p>To be in with a chance to win you just need to enter your details before midnight on 31st December 2018 (please read terms and conditions for full prize draw details). We'll be in touch with the lucky winners by 28th January 2019.<br/>
+            Good luck!
+          </p>
+
+        </article>
+
+
+
+        <form action="{GDCForm}" method="post" />
+        <input type="hidden" name="{AddList:21766_Dec18_AWIP_GDC}" />
+        <input type="hidden" id="PKey" name="{SetField: GDC_21766}" value="{toemail}_{Now}" />
+        <input type="hidden" name="redirect" value="{ViewLink:Thankyou}" />
+        <input name="{SetField: NW_Date}" type="hidden" value="{Now}" />
+
+        <article class="form_area right">
+          <p class="small">Fields marked with an * are required</p>
+          <label>
+            <span>Title*</span>
+          </label>
+          <div class="select-style">
+            <label>
+              <select id="title" name="{SetField: NW_Title}">
+                <option value="" />
+                <option value="Mr" />Mr
+                <option value="Mrs" />Mrs
+                <option value="Miss" />Miss
+                <option value="Dr" />Dr
+              </select>
+            </label>
+          </div>
+
+          <label> <span class="required" id="titlerequired">Please select your title</span>
+          </label>
+
+          <label><span>First name*</span>
+            <input class="reg-form-text" id="fname" name="{SetField: NW_Forename}" type="text" value="" />
+
+
+            <span class="required" id="fnamerequired">Please enter your first name</span>
+          </label>
+          <label>
+
+            <span>Surname*</span>
+            <input class="reg-form-text" id="sname" name="{SetField: NW_Surname}" type="text" value="" /><span class="required" id="snamerequired">Please enter your surname</span>
+          </label>
+
+
+
+
+          <label><span>Email address*</span>
+            <input class="reg-form-text" id="email" name="{SetField: NW_Email}" type="email" value="" /><span class="required" id="emailrequired">Please enter a valid email address</span>
+          </label>
+
+
+          <label><span>Telephone number*</span>
+            <input class="reg-form-text" id="phone" name="{SetField: NW_Telephone1}" type="tel" value="" />
+            <span class="required" id="phonerequired">Please enter a valid telephone number</span>
+          </label>
+
+
+
+
+          <label><span>Your Premier Banking<br />
+            Manager&#39;s name (if known):</span>
+            <input class="reg-form-text" name="{SetField: NW_PBM1}" type="text" value="" />
+          </label>
+
+          <div class="clear">&#160;</div>
+
+          <div class="radiobuttons" id="options">
+            <label id="termscheckbox">
+              <input class="left" id="terms" name="{SetField: NW_Terms}" type="checkbox" value="checked" /><span>
+
+              I have read and accept the NatWest Premier <a class="toggleDiv" style="text-decoration:none;">Christmas Prize Draw Terms and Conditions</a> set out below.
+              </span>
+
+            </label>
+
+            <div class="clear">&#160;</div>
+          </div>
+
+          <div class="clear">&#160;</div>
+          <a id="TC" name="TC"></a>
+          <span class="required" id="termsrequired">Please agree to the terms and conditions</span>
+
+          <div class="clear">&#160;</div>
+          <input onclick="return validateForm();" type="submit" value="Submit" />
+          <div class="clear">&#160;</div>
+          <a id="TandC" name="TandC"></a>
+
+          <span class="hide" id="terms_show_btn"><a name="t">Terms &#38; conditions</a></span>
+
+          <div id="termsarea" style="display: none;">
+
+            <ol>
+              <li>Prize draw open to NatWest Premier Customers who are UK residents. Excludes Northern Ireland.  Draw not open to employees of The Royal Bank of Scotland Group of companies, their families or anyone associated with this draw.</li>
+              <li>One entry per person. Entries must be submitted by registering and entering via the prize draw link within your Premier customer email and be received by 23:59 on 31 December 2018.</li>
+              <li>Entries not submitted in accordance with these rules, delayed, damaged, incomplete, altered or illegible will be disqualified. No responsibility is accepted for entries lost, delayed or damaged in the post. Proof of posting or sending by e-mail will not be accepted as proof of entry.</li>
+              <li>Winners will be drawn at random on 7 January 2019 and awarded prizes in the order in which they are drawn as follows: 1st prize &pound;500 John Lewis voucher, and 3 runners up prizes of &pound;200 John Lewis vouchers. The prize is not transferable and no cash alternative is available. The judge's decision is final and no correspondence will be entered into.</li>
+              <li>Winners will be informed by email by 28 January 2019, when information about the winner(s) will be available by sending a SAE to "NatWest Premier Christmas Prize Draw Winner List" Premier Marketing, 175 Glasgow Road, Royal Bank of Scotland, Floor 2, House F, Edinburgh, EH12 9SB.</li>
+              <li> If a prize is unclaimed after reasonable efforts have been made to contact the winners the promoter will be entitled to dispose of the prize as it sees fit without any liability to the winners for having done so.</li>
+              <li>The promoter reserves the right to alter, amend or foreclose the promotion without prior notice.</li>
+              <li>The promoter is NatWest Bank, 135 Bishopsgate, London, EC2M 3UR, and from 14 December 2018, 250 Bishopsgate, London EC2M 4AA.</li>
+            </ol>
+
+
+          </div>
+        </article>
+      </form>
+
+      <div class="clear">&#160;</div>
+    </section>
+
+    <div class="clear">&#160;</div>
+
+    <div class="one purple">&#160;</div>
+
+    <div class="prefooter">
+      <p>
+        <img alt="" height="16" src="{ImagePath}NW_LOCK.gif" width="17" />Your information</p>
+
+      <p>WHO WE ARE
+        <br />We are a member of The Royal Bank of Scotland Group (the Group). For information about our group of companies please visit <a href="http://www.rbs.com/" style="text-decoration:underline; color:#666666;" target="_blank">www.rbs.com</a> or contact 0131 556 8555 or Textphone 0845 900 5960. </p>
+
+      <p>YOUR ELECTRONIC INFORMATION
+        <br />If you contact us electronically, we may collect your electronic identifier (e.g. Internet Protocol (IP) or telephone number) supplied by your service provider. The information you provide will be used for the purposes of this prize draw only.</p>
+    </div>
+
+    <footer class="purple">
+      <ul>
+        <li><a href="http://www.natwest.com/global/cookieprivacy.ashx" target="_blank">Privacy</a>
+        </li>
+        <li class="break">|</li>
+        <li><a href="http://www.natwest.com/global/security.ashx" target="_blank">Security</a>
+        </li>
+        <li class="break">|</li>
+        <li><a href="http://www.natwest.com/global/legal.ashx" target="_blank">Website terms &#38; conditions and FSCS</a>
+        </li>
+        <li class="break">|</li>
+        <li><a href="http://www.natwest.com/private.ashx?extcam=furl-private" target="_blank">National Westminster Bank Plc &copy; 2018</a>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="clear">&#160;</div>
+  </section>
+  <script type="text/javascript">
+    $('#terms_show_btn').click(function() {
+      $('#termsarea').toggle();
+    });
+
+    $(document).ready(function() {
+      $("span[class='required']").hide();
+      $('#PKey').val(Date.now() + Math.random() * 20);
+    });
+
+
+    $(document).ready(function() {
+      $("span[class='required']").hide();
+    });
+
+    function isValidEmailAddress(emailAddress) {
+      var pattern = new
+
+          
+RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+      return pattern.test(emailAddress);
+    };
+
+    function isValidPhone(phoneNumber) {
+      var reg = /^-?\d*\.?\d*$/;
+      return reg.test(phoneNumber);
+    };
+
+
+    function validateTitle() {
+      var title = $('#title').val();
+      if (title.length == 0) {
+        $('#titlerequired').show();
+        return false;
+      } else {
+        $('#titlerequired').hide();
+        return true;
+      }
+    }
+
+    function validateFirstname() {
+      var fname = $('#fname').val();
+      if (fname.length == 0) {
+        $('#fnamerequired').show();
+        return false;
+      } else {
+        $('#fnamerequired').hide();
+        return true;
+      }
+    }
+
+    function validateSurname() {
+      var sname = $('#sname').val();
+      if (sname.length == 0) {
+        $('#snamerequired').show();
+        return false;
+      } else {
+        $('#snamerequired').hide();
+        return true;
+      }
+    }
+
+    function validateEmail() {
+      var email = $('#email').val();
+      if (email.length == 0) {
+        $('#emailrequired').show();
+        return false;
+      } else {
+        if (isValidEmailAddress(email)) {
+          $('#emailrequired').hide();
+          return true;
+        } else {
+          $('#emailrequired').show();
+          return false;
+        }
+      }
+    }
+
+    //    function validatePhone() {
+    // var phone = $('#phone').val();
+    //  if (phone.length == 0) {
+    //    $('#phonerequired').show();
+    //    return false;
+    //  } else {
+    //    $('#phonerequired').hide();
+    //    return true;
+    //  }
+    //}
+
+    function validatePhone() {
+      var phone = $('#phone').val();
+      if (phone.length <= 9) {
+        $('#phonerequired').show();
+        return false;
+      } else {
+        if (isValidPhone(phone)) {
+          $('#phonerequired').hide();
+          return true;
+        } else {
+          $('#phonerequired').show();
+          return false;
+        }
+      }
+    }
+
+
+    function validatePostcode() {
+      var postcode = $('#postcode').val();
+      if (postcode.length == 0) {
+        $('#postcoderequired').show();
+        return false;
+      } else {
+        $('#postcoderequired').hide();
+        return true;
+      }
+    }
+
+    function validateSortcode() {
+      var sortcode = $('#sortcode').val();
+      if (sortcode.length == 0) {
+        $('#sortcoderequired').show();
+        return false;
+      } else {
+        $('#sortcoderequired').hide();
+        return true;
+      }
+    }
+
+    function validateTerms() {
+      if ($("#terms").prop('checked') == true) {
+        $('#termsrequired').hide();
+        return true;
+      } else {
+        $('#termsrequired').show();
+        return false;
+      }
+    }
+
+    $('#title').change(function() {
+      validateTitle();
+    });
+    $('#fname').blur(function() {
+      validateFirstname();
+    });
+    $('#sname').blur(function() {
+      validateSurname();
+    });
+    $('#email').blur(function() {
+      validateEmail();  
+    });
+    $('#phone').blur(function() {
+      validatePhone();
+    });
+    $("#terms").change(function() {
+      validateTerms();
+    });
+    $('#postcode').blur(function() {
+      validatePostcode();
+    });
+    $('#sortcode').blur(function() {
+      validateSortcode();
+    });
+
+    function validateForm() {
+      var validTitle = validateTitle();
+      var validfname = validateFirstname();
+      var validsname = validateSurname();
+      var validemail = validateEmail()
+          var validphone = validatePhone();
+      var validterms = validateTerms();
+
+      if (validTitle && validfname && validsname && validemail && validphone && validterms) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  </script>{Attachments}{MessageOpen}</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>RBS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=false" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+    <section class="wrapper">
+
+        <header>
+            <figure class="header_area RBS_header">
+                <a href="http://www.rbs.co.uk/private.ashx" target="_blank">
+                    <img src="{ImagePath}rbs_private_logo_white.png" alt="Royal Bank of Scotland Private" class="logo" />
+                </a>
+            </figure>
+        </header>
+
+        <div class="clear"></div>
+
+        <!--Main content section-->
+        <section class="content">
+
+           
+
+          <form method="post" action="{GDCForm}" />
+          <input type="hidden" name="{AddList:GDC_75839-10_Spa_Competition}" />
+          <input type="hidden" id="PKField" name="{SetField: GDC_PK}" value="{toemail}__{Now}" /> 
+          <input type="hidden" name="redirect" value="{ViewLink:Spa_Thankyou}" />
+          <input type="hidden" name="{SetField: RBS_Date}" value="{Now}" />
+            
+            <article class="form_area right">
+                <p class="small">Fields marked with an * are required</p>
+                <label>
+                    <span>Your title*</span> 
+                    <div class="select-style">
+                      <select id="title" name="{SetField: RBS_Title}" value="{RBS_Title}">
+                            <option value="" />
+                            <option value="Mr" />Mr
+                            <option value="Mrs" />Mrs
+                            <option value="Miss" />Miss
+                            <option value="Dr" />Dr
+                        </select>
+                    </div>
+                    <span id="titlerequired" class="required">Please select your title</span> 
+                </label>
+
+
+                <label><span>Your first name*</span> 
+                  <input id="fname" name="{SetField: RBS_Forename}" type="text" class="reg-form-text" value="{RBS_Forename}" /><span id="fnamerequired" class="required">Please enter your first name</span>
+                </label>
+
+                <label><span>Surname*</span> 
+                    <input id="sname" name="{SetField: RBS_Surname}" type="text" class="reg-form-text" value="{RBS_Surname}" /><span id="snamerequired" class="required">Please enter your surname</span>
+                </label>
+               
+                <label><span>Email address*</span> 
+                    <input id="email" name="{SetField: RBS_Email}" type="text" class="reg-form-text" value="{toemail}" /><span id="emailrequired" class="required">Please enter a valid email address</span>
+                </label>
+
+                <label><span>Telephone number*</span> 
+                    <input id="phone" name="{SetField: RBS_Telephone}" type="text" class="reg-form-text" value="" /><span id="phonerequired" class="required">Please enter a valid telephone number</span>
+                </label>
+                
+                <label><span>Your Private Banking<br />Manager's name (if known):</span> 
+                    <input name="{SetField: PBM1_NAME}" type="text" class="reg-form-text" value="{PBM1_Name}" />
+                </label>
+
+                <div class="clear"></div>
+                
+
+                <div class="radiobuttons">
+                    <label id="termscheckbox">
+                        <input id="terms" name="{SetField: GDC_Terms_Tick}" value="checked" type="checkbox" class="left" /><span>I have read and accept The Spa Break in Edinburgh
+                                <a class="toggleDiv">Terms and conditions</a> set out below.</span>
+                    </label>
+                    <div class="clear"></div>
+                    <span id="termsrequired" class="required">Please agree to the terms and conditions</span>
+                </div>
+
+                <div class="clear"></div>
+
+                <input type="submit" value="Submit" class="" onclick="return validateForm();" />
+                <span class="hide" id="terms_show_btn">Terms &amp; conditions</span>
+
+               
+
+                    <img src="{ImagePath}rbs_side.jpg" style="width:240px; height:auto;" alt="" />
+                </div>
+
+            </article>
+
+          </form>
+
+            <div class="clear"></div>
+        </section>
+
+        <div class="clear"></div>
+
+        <div class="one purple">
+
+        </div>
+
+
+
+
+
+        <footer class="rbs_blue">
+            
+        </footer>
+
+        <div class="clear"></div>
+
+    </section>
+
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("span[class='required']").hide();
+        });
+
+        function isValidEmailAddress(emailAddress) {
+            var pattern = new
+            
+RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+            return pattern.test(emailAddress);
+        };
+
+        function validateTitle() {
+            var title = $('#title').val();
+            if (title.length == 0) {
+                $('#titlerequired').show();
+                return false;
+            } else {
+                $('#titlerequired').hide();
+                return true;
+            }
+        }
+
+        function validateFirstname() {
+            var fname = $('#fname').val();
+            if (fname.length == 0) {
+                $('#fnamerequired').show();
+                return false;
+            } else {
+                $('#fnamerequired').hide();
+                return true;
+            }
+        }
+
+        function validateSurname() {
+            var sname = $('#sname').val();
+            if (sname.length == 0) {
+                $('#snamerequired').show();
+                return false;
+            } else {
+                $('#snamerequired').hide();
+                return true;
+            }
+        }
+
+        function validateEmail() {
+            var email = $('#email').val();
+            if (email.length == 0) {
+                $('#emailrequired').show();
+                return false;
+            } else {
+                if (isValidEmailAddress(email)) {
+                    $('#emailrequired').hide();
+                    return true;
+                } else {
+                    $('#emailrequired').show();
+                    return false;
+                }
+            }
+        }
+
+        function validatePhone() {
+            var phone = $('#phone').val();
+            if (phone.length == 0) {
+                $('#phonerequired').show();
+                return false;
+            } else {
+                $('#phonerequired').hide();
+                return true;
+            }
+        }
+                                
+                                function validatePostcode() {
+            var postcode = $('#postcode').val();
+            if (postcode.length == 0) {
+                $('#postcoderequired').show();
+                return false;
+            } else {
+                $('#postcoderequired').hide();
+                return true;
+            }
+        }
+                                
+                                function validateSortcode() {
+            var sortcode = $('#sortcode').val();
+            if (sortcode.length == 0) {
+                $('#sortcoderequired').show();
+                return false;
+            } else {
+                $('#sortcoderequired').hide();
+                return true;
+            }
+        }
+
+        function validateTerms() {
+            if ($("#terms").prop('checked') == true) {
+                $('#termsrequired').hide();
+                return true;
+            } else {
+                $('#termsrequired').show();
+                return false;
+            }
+        }
+
+        $('#title').change(function() {
+            validateTitle();
+        });
+        $('#fname').blur(function() {
+            validateFirstname();
+        });
+        $('#sname').blur(function() {
+            validateSurname();
+        });
+        $('#email').blur(function() {
+            validateEmail();
+        });
+        $('#phone').blur(function() {
+            validatePhone();
+        });
+        $("#terms").change(function() {
+            validateTerms();
+        });
+                                $('#postcode').blur(function() {
+            validatePostcode();
+        });
+                                $('#sortcode').blur(function() {
+            validateSortcode();
+        });
+        function validateForm() {
+            var validTitle = validateTitle();
+            var validfname = validateFirstname();
+            var validsname = validateSurname();
+            var validemail = validateEmail()
+            var validphone = validatePhone();
+            var validterms = validateTerms();
+
+            if (validTitle && validfname && validsname && validemail && validphone && validterms ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+    {Attachments}{MessageOpen}</body>
+
+</html>
+
+Seema Patel
+Email Team Leader | Paragon Customer Communications 
+p +44 (0) 0207 601 6270  m +44 (0) 7795 111446 e SeemaPatel@paragon-cc.co.uk  w www.paragon-cc.co.uk
+ 
+
+Together, delivering the future of brilliant
+customer communications, globally
+
+The Best People | Customer Focused | Confident | Empowering | Inspiring
+

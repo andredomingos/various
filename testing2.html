@@ -1,0 +1,1925 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--[if !mso]>
+      <!-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        table {border-collapse: collapse !important;}
+        sup {font-size: 100% !important;}
+      </style>
+    <![endif]-->
+    <style type="text/css">
+      a[x-apple-data-detectors] {
+          color: inherit !important;
+          text-decoration: none !important;
+          font-size: inherit !important;
+          font-family: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+        }
+        .mobileOFF {
+          display: block !important;
+          font-size: 12px !important;
+          max-height: none !important;
+          line-height: 1.5 !important;
+        }
+
+        .carousel {
+          display: block!important;
+        }
+        
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            .fallback {
+                display: none;
+            }
+            .carousel {
+                display: block !important;
+                max-height: none !important;
+                position: relative;
+            }
+            #MessageViewBody .fallback,
+            body.MsgBody .fallback {
+                display: block;
+            }
+            #MessageViewBody .carousel,
+            body.MsgBody .carousel {
+                display: none !important;
+            }
+            /* .carousel article {
+                width: 100%;
+                display: block;
+            } */
+            .carousel article {
+                display: block!important;
+                width: 100% !important;
+                height: auto !important;
+            }
+            .carousel.responsive {
+                width: 100% !important;
+            }
+            .carousel.responsive .car-cont {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            /* .carousel.fade article {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              -webkit-animation: hero-anim 18s linear infinite;
+            }
+            .carousel.fade article:nth-child(1) {
+                position: relative;
+                -webkit-animation-delay: -20s;
+            }
+            .carousel.fade article:nth-child(2) {
+                -webkit-animation-delay: -14s;
+            }
+            .carousel.fade article:nth-child(3) {
+                -webkit-animation-delay: -8s;
+            } */
+
+            .carousel.fade article {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              -webkit-animation: hero-anim 12s linear infinite;
+            }
+            .carousel.fade article:nth-child(1) {
+                position: relative;
+                -webkit-animation-delay: -14s;
+            }
+            .carousel.fade article:nth-child(2) {
+                -webkit-animation-delay: -10s;
+            }
+            .carousel.fade article:nth-child(3) {
+                -webkit-animation-delay: -5s;
+            }
+
+
+
+            @-webkit-keyframes hero-anim {
+                /* start fade in */
+                0% {
+                    z-index: 2;
+                }
+                /* end fade in */
+             
+                33% {
+                    z-index: 2;
+                }
+                /* lower z-index - allow next image to fade in */
+                50% {
+                    z-index: 1;
+                }
+
+                100% {
+                    z-index: 1;
+                }
+            }
+        }
+        @media screen and (max-width: 440px) {
+            .outer {
+                width: 330px !important;
+            }	
+            .w300 {
+                width: 300px !important;
+            }	
+            .w330{
+              width: 330px !important;
+            }
+            .w80{
+              width: 86% !important;
+            }
+            .font20{
+              font-size:20px !important;
+              line-height: normal !important;
+            }
+            .mobhide {
+                display:none !important;
+            }
+            .mobile {
+                display: block !important;
+                font-size: 12px !important;
+                max-height: none !important;
+                line-height: 1.5 !important;
+            }
+            .tblht {
+                height: auto!important;
+            }	
+            .logos {
+                padding-left: 5px !important;
+                padding-right: 5px !important;
+            }
+            .swH1 {
+                font-size: 20px !important;
+                line-height: 26px !important;
+            }
+            .pad7 {
+                padding-bottom: 7px !important;
+            }
+            .ptb30{
+              padding-top: 30px !important;
+              padding-bottom: 30px !important;
+            }
+        }
+        @media screen and (min-width: 441px) {
+            .outer {
+            width: 640px !important;
+            max-width: 640px;
+            }
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 1) and (min-device-width: 1200px) {
+            .wk-css {
+            display: block !important;
+            font-size: 12px !important;
+            max-height: none !important;
+            line-height: 1.5 !important;
+            }
+            .wk-mobhide {
+            display:none !important;
+            }
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            .wk-css {
+            display: block !important;
+            font-size: 12px !important;
+            max-height: none !important;
+            line-height: 1.5 !important;
+            }
+            .wk-mobhide {
+            display:none !important;
+            }
+        }
+
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) { 
+          .wrapper {min-width: 375px !important;}
+        }
+          /* Styles for carosel Here */
+          input {
+          display: none
+          }
+          #container {
+          width: 100%;
+          overflow: hidden
+          }
+          #slider {
+          width: 640px;
+          height: 658px;
+          margin: 0 auto;
+          }
+          #slide1:checked~#slides .inner {
+          margin-left: 0
+          }
+          #slide2:checked~#slides .inner {
+          margin-left: -100%
+          }
+          #slide3:checked~#slides .inner {
+          margin-left: -200%
+          }
+          #slides .inner {
+          width: 500%;
+          line-height: 0
+          }
+          #slides article{
+          width: 20%;
+          float: left
+          }
+          #commands {
+          margin: -46% 0 0 0;
+          width: 100%;
+          height: 101px;
+          }
+          #commands label {
+          display: none;
+          width: 65px;
+          height: 65px;
+          opacity: 0.9;
+          }
+          #commands label:hover {
+          opacity: 1;
+          }
+
+          #active {
+          position: relative;
+          z-index: 5;
+          margin: 16% 0 0;
+          text-align: center
+          }
+          #active label {
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 0px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: #bbb
+          }
+          #active label:hover {
+          background: #333;
+          border-color: #777!important
+          }
+          #slide1:checked~#commands label:nth-child(2), 
+          #slide2:checked~#commands label:nth-child(3), 
+          #slide3:checked~#commands label:nth-child(2) {
+          background: url('http://contentz.mkt8966.com/lp/21842/125800/right-round.png') no-repeat;
+          float: right;
+          background-size: 65px 65px;
+          margin: -14px 36px 0 0;
+          display: block;
+          }
+          #slide1:checked~#commands label:nth-child(0), 
+          #slide2:checked~#commands label:nth-child(1), 
+          #slide3:checked~#commands label:nth-child(2) {
+          background: url('http://contentz.mkt8966.com/lp/21842/125800/left-round.png') no-repeat;
+          float: left;
+          background-size: 65px 65px;
+          margin: -14px 0 0 59px;
+          display: block;
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+          }
+          .caption {
+          line-height: 20px;
+          margin: 0 0 -150%;
+          position: absolute;
+          padding: 300px 12px;
+          opacity: 0;
+          color: #fff;
+          text-transform: none;
+          font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+          text-align: left;
+          font-size: 18px
+          }
+          .caption bar {
+          display: inline-block;
+          padding: 10px;
+          background: #000;
+          border-radius: 3px 3px 3px 3px;
+          -moz-border-radius: 3px 3px 3px 3px;
+          -webkit-border-radius: 3px 3px 3px 3px;
+          opacity: 0.7;
+          filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70)
+          }
+          #slides .inner {
+              -webkit-transform: translateZ(0);
+              -webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              -moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              -ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              -o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              -webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              -moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              -ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              -o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+              transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000)
+          }
+          #slider {
+              -webkit-transform: translateZ(0);
+              -webkit-transition: all 0.5s ease-out;
+              -moz-transition: all 0.5s ease-out;
+              -o-transition: all 0.5s ease-out;
+              transition: all 0.5s ease-out
+          }
+
+          .hidden-desk {
+              display: none !important;
+          }
+        
+        @media only screen and (max-width: 441px) {
+          .stack_block{
+            display: block !important;
+          }
+          #slider {
+            text-align: center;
+            width: 330px;
+            height: 423px; 
+          }
+          #slide1:checked~#commands label:nth-child(2), 
+          #slide2:checked~#commands label:nth-child(3), 
+          #slide3:checked~#commands label:nth-child(2) {
+            background: url('http://contentz.mkt8966.com/lp/21842/125800/right-round.png') no-repeat;
+            float: right;
+            margin: -26px 12px 0 0;
+            background-size: 40px 40px;
+            display: block;
+          }
+          #slide1:checked~#commands label:nth-child(0), 
+          #slide2:checked~#commands label:nth-child(1), 
+          #slide3:checked~#commands label:nth-child(2) {
+            background: url('http://contentz.mkt8966.com/lp/21842/125800/left-round.png') no-repeat;
+            float: left;
+            margin: -25px 0 0 12px;
+            background-size: 40px 40px;
+            display: block;
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+          .hidden-mob {display: none !important; }
+          .hidden-desk {display: block !important;}
+          #commands {
+            margin: -50% 0 0 0;
+            width: 100%;
+            height: 101px;
+          }
+          #commands label {
+            display: none;
+            width: 40px;
+            height: 40px;
+            opacity: 0.9;
+          }
+          .accordion-wrapper {
+            width: 100%;
+        }	
+
+        }	
+        /* END Styles for carosel Here */	 
+        /* Styles for Accordian Here */	 
+        
+        h1 {
+            text-align: center;
+        }
+        .tab {
+            position: relative;
+            margin-bottom: 1px;
+            width: 100%;
+            color: #fff;
+            overflow: hidden;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        label {
+            position: relative;
+            display: block;
+            padding: 0;
+            background: #ffffff;
+            font-weight: bold;
+            line-height: 3;
+            cursor: pointer;
+        }
+        .blue label {
+            background: #2980b9;
+        }
+        .tab-content {
+            max-height: 0;
+            overflow: hidden;
+            background: #1abc9c;
+            -webkit-transition: max-height .35s;
+            -o-transition: max-height .35s;
+            transition: max-height .35s;
+        }
+        .blue .tab-content {
+            background: #3498db;
+        }
+        .tab-content p {
+            margin: 1em;
+        }
+        /* :checked */
+        input:checked ~ .tab-content {
+          max-height: 24em;
+        }
+        .arrow-down {
+            position: absolute;
+            right: 15px;
+            top: 8px;
+        }
+   
+        /* END Styles for Accordian Here */	 
+        .hamburger-wrapper {
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }	
+        .hamburger-tab {
+            position: relative;
+            margin-bottom: 1px;
+            width: 100%;
+            color: #fff;
+            overflow: hidden;
+        }
+        .ham-content {
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transition: max-height .35s;
+            -o-transition: max-height .35s;
+            transition: max-height .35s;
+            background-color: #ffffff
+        }
+        .ham-content p {
+            margin: 1em;
+        }
+        /* :checked */
+        input:checked ~ .ham-content {
+            max-height: 17.8em;
+        }
+        .arrow-down {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }	
+        .block-position{font-size: 18px; position: relative;  width: 55%;}
+        .drop-tabs {padding:8px 20px 8px 14px;font-family: arial;font-size: 18px;font-weight: bold; text-align: center}
+        .drop-tabs-ul {list-style: none;margin-left: 0px; padding-left: 0px; margin-top: 0;}
+        .homepage { background-color: #c35829;}
+        .car {background-color: #86b5b7;}
+        .home {background-color: #c93c77;}
+        .bike {background-color: #96c8f1;}
+        .life {background-color: #ac86bc;}
+        .van {background-color: #459942;}
+        .link-white {color: white; text-decoration: none}
+    </style>
+    <style type="text/css">
+      @media screen {
+        @font-face {
+          font-family: 'ITC Avant Garde Gothic Std';
+          src: url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Md.eot');
+          src: url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Md.eot?#iefix') format('embedded-opentype'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Md.woff2') format('woff2'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Md.woff') format('woff'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Md.ttf') format('truetype'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Md.svg#ITCAvantGardeStd-Md') format('svg');
+          font-weight: 500;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: 'ITC Avant Garde Gothic Std Demi';
+          src: url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Demi.eot');
+          src: url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Demi.eot?#iefix') format('embedded-opentype'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Demi.woff2') format('woff2'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Demi.woff') format('woff'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Demi.ttf') format('truetype'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Demi.svg#ITCAvantGardeStd-Demi') format('svg');
+          font-weight: normal;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: 'ITC Avant Garde Gothic Std';
+          src: url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Bold.eot');
+          src: url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Bold.eot?#iefix') format('embedded-opentype'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Bold.woff2') format('woff2'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Bold.woff') format('woff'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Bold.ttf') format('truetype'),
+              url('http://contentz.mkt8966.com/lp/21842/125800/ITCAvantGardeStd-Bold.svg#ITCAvantGardeStd-Bold') format('svg');
+          font-weight: bold;
+          font-style: normal;
+        }
+      }
+    </style>
+  </head>
+  
+  <body bgcolor="#DDDDDD" style="margin:0 !important;-webkit-text-size-adjust:100% !important;-ms-text-size-adjust:100% !important;-webkit-font-smoothing:antialiased !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;background-color:#DDDDDD;">
+    <!-- PRE-HEADER -->
+    <div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Open for your exclusive 10% discount Save on your home insurance & more with Swinton
+      this January &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
+    <!--
+    START MAIN BUILD BUILD FP 2.0 -->
+    <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;"
+    width="100%">
+      <tr>
+        <td align="center" bgcolor="#DDDDDD" style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;"
+        valign="top">
+          <center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+            <div class="webkit" style="max-width:640px;margin:0 auto;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;">
+              <!--[if (gte mso 9)|(IE)]>
+                <table width="640" align="center" style="border-spacing:0;font-family:Tahoma, Geneva, Arial, sans-serif;color:#333333;">
+                  <tr>
+                    <td style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;">
+                    <![endif]-->
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="outer"
+                    style="border-spacing:0;;Margin:0 auto;width:100%;max-width:640px;border-spacing:0;"
+                    width="100%">
+                      <!-- START HEADER MODULES HERE -->
+                      <!-- BEGIN MODULE WEBVIEW -->
+                      <tr>
+                        <td bgcolor="#ffffff" style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;">
+                          <table border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;font-family:Tahoma, Geneva, Arial, sans-serif;color:#333333;border-spacing:0;font-family:Tahoma, Geneva, Arial, sans-serif;color:#333333;"
+                          width="100%">
+                            <tr>
+                              <td align="left" style="padding:0;font-family:Tahoma, Geneva, Arial, sans-serif;font-size:10px;color:#4A4A4A;line-height:14px;padding-left:20px;padding-right:20px;border-collapse:collapse;padding-top:15px;padding-bottom:0px;"
+                              valign="top">Open for your exclusive 10% discount
+                                <br />Save on your home insurance & more with Swinton this January
+                                <br />Visit
+                                <a name="swinton_url" href="https://www.swinton.co.uk/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhomepage&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                target="_blank" style="color:#4A4A4A; text-decoration: none; font-weight: bold">www.swinton.co.uk</a>or call
+                                <a href="tel:08009544941" target="_blank" style="color:#4A4A4A; text-decoration: none; font-weight: bold"
+                                name="tel_08009544941">0800 954 4941</a>
+                                <br />No Images?
+                                <a href="http://links.elink.sender.swinton.co.uk/servlet/MailView?ms=NTAyNTIxMgS2&r=NTgwMjkxMzQ4NjkS1&j=MTE5MjIzMzczNwS2&mt=1&rt=0"
+                                target="_blank" style="color:#4A4A4A; text-decoration: none; font-weight: bold"
+                                xt="SPCLICKTOVIEW" name="viewlink">View our email here</a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- END MODULE WEBVIEW -->
+                      <!-- END HEADER MODULES HERE -->
+                      <tr>
+                        <td bgcolor="#FFFFFF" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <!-- START BODY MODULES HERE -->
+                            <!-- BEGIN MODULE S/H -->
+                            <tr>
+                              <td bgcolor="#FFFFFF">
+                                <table border="0" cellpadding="0" cellspacing="0" class="mobhide" width="590"
+                                align="center">
+                                  <tr>
+                                    <td align="center" width="590" class="w300" style="padding-top:30px; padding-bottom:30px;">
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;">
+                                        <tr>
+                                          <td width="295" align="left" class="w165" valign="top">
+                                            <a name="top_logo" href="https://www.swinton.co.uk/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhomepage&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                            target="_blank">
+                                              <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_swinton-logo.png'
+                                              alt="Swinton" width="204" style="display:block; height: auto;">
+                                            </a>
+                                          </td>
+                                          <td width="295" align="left" class="w165" valign="middle" style="vertical-align: middle;">
+                                            <table border="0" cellpadding="0" cellspacing="0" class="">
+                                              <tr>
+                                                <td width="295" align="right" class="w165" valign="top" style="font-family: 'ITC Avant Garde Gothic Std' ,Tahoma, Geneva, Arial, sans-serif; color: #DE4A11; font-size: 15px; line-break: 24px; font-weight: bold; ">Call for a quote
+                                                  <a href="tel:08009544941" target="_blank" style="color:#1f396e; text-decoration: none; font-size: 19px; line-break: 24px;"
+                                                  name="tel_08009544941_2">0800 954 4941</a>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td width="295" align="right" class="w165" valign="top" style="font-family: 'ITC Avant Garde Gothic Std' ,Tahoma, Geneva, Arial, sans-serif; color: #DE4A11; font-size: 15px; line-break: 24px; font-weight: bold; padding-top: 10px;">Discuss your policy
+                                                  <a href="tel:08009544935" target="_blank" style="color:#1f396e; text-decoration: none; font-size: 19px; line-break: 24px;"
+                                                  name="tel_08009544935">0800 954 4935</a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0" class="mobhide" width="100%">
+                                  <tr>
+                                    <td width="20%" align="center" bgcolor="#2db8b4" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #2db8b4; min-width: 20%;">
+                                      <a name="top_nav_car" href="https://www.swinton.co.uk/car-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2FPMC&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                      target="_blank" style="color:#ffffff; text-decoration: none; padding: 10px 30px; ">Car</a>
+                                    </td>
+                                    <td width="20%" align="center" bgcolor="#ee2a75" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #ee2a75; min-width: 20%;">
+                                      <a name="top_nav_home" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                      target="_blank" style="color:#ffffff; text-decoration: none; padding: 10px 30px; ">Home</a>
+                                    </td>
+                                    <td width="20%" align="center" bgcolor="#2ac5f4" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #2ac5f4; min-width: 20%;">
+                                      <a name="top_nav_bike" href="https://www.swinton.co.uk/motorbike-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fbike&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                      target="_blank" style="color:#ffffff; text-decoration: none; padding: 10px 30px; ">Bike</a>
+                                    </td>
+                                    <td width="20%" align="center" bgcolor="#af74b1" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #af74b1; min-width: 20%;">
+                                      <a name="top_nav_life" href="https://www.swinton.co.uk/more/life/?aff=email%2Fcrosssales%2FJanuaryaps19%2Flife&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                      target="_blank" style="color:#ffffff; text-decoration: none; padding: 10px 30px; ">Life</a>
+                                    </td>
+                                    <td width="20%" align="center" bgcolor="#0f9f49" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #0f9f49; min-width: 20%;">
+                                      <a name="top_nav_van" href="https://www.swinton.co.uk/van-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fvan&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                      target="_blank" style="color:#ffffff; text-decoration: none; padding: 10px 30px; ">Van</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!--[if !mso]>
+                                  <!-->
+                                  <div class="mobile" style="display:none;max-height:0px;overflow:hidden;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td align="center" style="padding-top:15px;padding-bottom:10px;padding-right:20px;padding-left:20px;">
+                                          <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;"
+                                          width="100%">
+                                            <tr>
+                                              <td width="143" align="left" valign="bottom" style="">
+                                                <a name="top_logo" href="https://www.swinton.co.uk/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhomepage&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                target="_blank">
+                                                  <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_swinton-logo-header-mob.png'
+                                                  alt="Swinton" width="143" style="border:0;display:block;border-width:0; height: auto;">
+                                                </a>
+                                              </td>
+                                              <td align="right" width="157" style="padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;"
+                                              valign="middle">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td align="right" width="30" style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;">&nbsp;</td>
+                                                    <td align="right" width="49" style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;">
+                                                      <a href="tel:08009544935" target="_blank" name="tel_08009544935_2">
+                                                        <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_call-about-policy-mob.png'
+                                                        alt="Call about your policy" width="54" style="border:0;display:block;border-width:0; height: auto;">
+                                                      </a>
+                                                    </td>
+                                                    <td align="right" style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;">&nbsp;</td>
+                                                    <td align="right" width="49" style="padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;">
+                                                      <a href="tel:08009544941" target="_blank" name="tel_08009544941_3">
+                                                        <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_call-quote-mob.png'
+                                                        alt="Call about your policy" width="54" style="border:0;display:block;border-width:0; height: auto;">
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!-- BEGIN MODULE CAROUSEL -->
+                                      <tr>
+                                        <td bgcolor="#ffffff" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="wk-mobhide"
+                                          style="border-spacing:0;font-family:sans-serif;color:#333333">
+                                            <tr class="outer">
+                                              <td bgcolor="#ffffff" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                                                <!--[if !mso]>
+                                                  <!-->
+                                                  <div class="mobile" style="display:none;max-height:0px;overflow:hidden;">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                      <tr>
+                                                        <td width="20%" align="center" bcolor="#2db8b4" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #2db8b4; min-width: 20%;">
+                                                          <a name="top_nav_car" href="https://www.swinton.co.uk/car-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2FPMC&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                          target="_blank" name="top_nav_car" style="color:#ffffff; text-decoration: none; padding: 10px;">Car</a>
+                                                        </td>
+                                                        <td width="20%" align="center" bcolor="#ee2a75" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #ee2a75; min-width: 20%;">
+                                                          <a name="top_nav_home" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                          target="_blank" name="top_nav_home" style="color:#ffffff; text-decoration: none; padding: 10px;">Home</a>
+                                                        </td>
+                                                        <td width="20%" align="center" bcolor="#2ac5f4" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #2ac5f4; min-width: 20%;">
+                                                          <a name="top_nav_bike" href="https://www.swinton.co.uk/motorbike-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fbike&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                          target="_blank" name="top_nav_bike" style="color:#ffffff; text-decoration: none; padding: 10px;">Bike</a>
+                                                        </td>
+                                                        <td width="20%" align="center" bcolor="#af74b1" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #af74b1; min-width: 20%;">
+                                                          <a name="top_nav_life" href="https://www.swinton.co.uk/more/life/?aff=email%2Fcrosssales%2FJanuaryaps19%2Flife&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                          target="_blank" name="top_nav_life" style="color:#ffffff; text-decoration: none; padding: 10px;">Life</a>
+                                                        </td>
+                                                        <td width="20%" align="center" bcolor="#0f9f49" style="font-size:12px; padding: 10px 0; color:#ffffff; font-family: 'ITC Avant Garde Gothic Std', Tahoma, Geneva, Verdana, sans-serif; font-size: 13px; line-height: normal; background: #0f9f49; min-width: 20%;">
+                                                          <a name="top_nav_van" href="https://www.swinton.co.uk/van-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fvan&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                          target="_blank" name="top_nav_van" style="color:#ffffff; text-decoration: none; padding: 10px;">Van</a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </div>
+                                                <!--<![endif]-->
+                                              </td>
+                                            </tr>
+                                          </table>
+                                          <!--[if !mso]>
+                                            <!-->
+                                            <div class="wk-css" style="display:none;max-height:0px;overflow:hidden;">
+                                              <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333">
+                                                <tr class="contents" style="width:100%;text-align:left">
+                                                  <td align="center" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                      <tr>
+                                                        <td>
+                                                          <!-- ******************************************** START CSS HERE ********************************************
+                                                          -->
+                                                          <div class="hamburger-wrapper">
+                                                            <div class="hamburger-tab">
+                                                              <input id="ham-one" type="checkbox" name="tabs">
+                                                              <label for="ham-one" style="background-color: #df4a11; font-family: arial; font-size: 12px;line-height: 0;"> <span class="arrow-down"><img style="padding-top: 1px;"     src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_capture_2.png' height="30" width="44" title="hamburger icon" alt="hamburger icon"    ></span>
+
+                                                                <div
+                                                                class="block-position">
+                                                                  <table border="0" cellspacing="0" style="border-spacing: 0;border-collapse: collapse;">
+                                                                    <tr>
+                                                                      <td>
+                                                                        <a class="link-white" style="padding: 5px 0 0 15px;line-height: 30px;" name="Anchor">Menu</a>
+                                                                      </td>
+                                                                      <td height="40"></td>
+                                                                    </tr>
+                                                                  </table>
+                                                            </div>
+                                                            </label>
+                                                            <div class="ham-content">
+                                                              <ul class="drop-tabs-ul">
+                                                                <a name="top_nav_car" href="https://www.swinton.co.uk/car-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2FPMC&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                                target="_blank" style="color:#ffffff; text-decoration: none;"></a>
+                                                                <li class="car drop-tabs">Car</li>
+                                                                </a>
+                                                                <a name="top_nav_home" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                                target="_blank" style="color:#ffffff; text-decoration: none;"></a>
+                                                                <li class="home drop-tabs">Home</li>
+                                                                </a>
+                                                                <a name="top_nav_bike" href="https://www.swinton.co.uk/motorbike-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fbike&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                                target="_blank" style="color:#ffffff; text-decoration: none;"></a>
+                                                                <li class="bike drop-tabs">Bike</li>
+                                                                </a>
+                                                                <a name="top_nav_life" href="https://www.swinton.co.uk/more/life/?aff=email%2Fcrosssales%2FJanuaryaps19%2Flife&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                                target="_blank" style="color:#ffffff; text-decoration: none;"></a>
+                                                                <li class="life drop-tabs">Life</li>
+                                                                </a>
+                                                                <a name="top_nav_van" href="https://www.swinton.co.uk/van-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fvan&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                                                target="_blank" style="color:#ffffff; text-decoration: none;"></a>
+                                                                <li class="van drop-tabs">Van</li>
+                                                                </a>
+                                                              </ul>
+                                                            </div>
+                                                          </div>
+                                            </div>
+                                            <!-- ******************************************** END CSS HERE ********************************************
+                                            -->
+                                            </td>
+                                            </tr>
+                                            </table>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                  </div>
+                                <!--<![endif]-->
+                                </td>
+                                </tr>
+                                <!-- END MODULE CAROUSEL -->
+                                </table>
+            </div>
+          <!--<![endif]-->
+          </td>
+          </tr>
+          <!-- END MODULE S/H -->
+          <tr>
+            <td bgcolor="#ffffff" align="center">
+              <table width="640" border="0" cellspacing="0" cellpadding="0" class="w330">
+                <tr>
+                  <td align="center" valign="top" class="db wf hauto">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobhide">
+                      <tr>
+                        <td align="center" valign="middle">
+                          <a href="https://www.swinton.co.uk/email/home-insurance-offer/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          target="_blank" name="header_1">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_car-hero_01.jpg'
+                            width="640" alt="" style="display: block; height: auto;">
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="middle">
+                          <a href="tel:08009544941" target="_blank" name="hero_08009544941">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_car-hero_08009544941.jpg'
+                            width="640" alt="" style="display: block; height: auto;">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if !mso]>
+                      <!-->
+                      <div class="mobile" style="display:none;max-height:0px;overflow:hidden;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" valign="top" class="stack_block">
+                              <a href="https://www.swinton.co.uk/email/home-insurance-offer/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              target="_blank" name="header_1_2">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_car-hero-mob_01.jpg'
+                                width="330" alt="" style="display: block; height: auto;">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top" class="stack_block">
+                              <a href="tel:08009544941" target="_blank" name="hero_08009544941_mob">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_car-hero-mob_tap.jpg'
+                                width="330" alt="" style="display: block; height: auto;">
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- BEGIN COPY MODULE 1COL -->
+          <tr>
+            <td bgcolor="#ffffff" align="center" style="padding-top:30px;padding-bottom:30px;">
+              <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;"
+              width="73%" class="w80">
+                <tr>
+                  <td style="padding-bottom:10px; font-family:Tahoma, Geneva, Arial, sans-serif; font-size:17px; color:#333333; line-height:25px; font-weight:normal; text-align:center;"
+                  valign="top">%%DC::FORENAME_RULE::SALUTATION_CONTENT%%</td>
+                </tr>
+                <tr>
+                  <td style="padding-top:0px;padding-bottom:10px;padding-left:0px;padding-right:0px;font-family:Tahoma, Geneva, Arial, sans-serif;font-size:15px;color:#333333;line-height:20px;font-weight:normal;text-align:center;"
+                  valign="top">If festive spending has dented your bank balance, let us help you start the New
+                    Year savvy, with a <strong>10% saving on your home insurance.</strong> You can't
+                    get this great saving online, so call us today and quote <strong>HOME-LOYAL10</strong> to
+                    claim and we'll start searching our panel of insurers to help you find the cover
+                    you need.</td>
+                </tr>
+                <tr>
+                  <td style="padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:Tahoma, Geneva, Arial, sans-serif;font-size:15px;color:#333333;line-height:20px;font-weight:bold;text-align:center;"
+                  valign="top">P.S. Keep scrolling for <span class="stack_block" style="display:none"></span>another
+                    savvy saving.</td>
+                </tr>
+              </table>
+              <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;"
+              width="100%" class="mobhide">
+                <tr>
+                  <td align="center" style="padding:25px 0 0;" valign="top">
+                    <a name="car_letter_call" href="tel:08009544941" target="_blank">
+                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_call-08009544941.jpg'
+                      alt="" width="265" style="border:0;display:block;border-width:0; display: block;"
+                      />
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding:25px 0;" valign="top">
+                    <a name="home10_more_info" href="https://www.swinton.co.uk/email/home-insurance-offer/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                    target="_blank">
+                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_more-info-btn.jpg'
+                      alt="" width="265" style="border:0;display:block;border-width:0; display: block;"
+                      />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <!--[if !mso]>
+                <!-->
+                <div class="mobile" style="display:none;max-height:0px;overflow:hidden;">
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="center" style="padding-top: 20px;">
+                        <a name="car_letter_call" href="tel:08009544941" target="_blank">
+                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_tap-to-call-btn.png'
+                          alt="" width="254" style="display: block; height: auto;">
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding-top: 10px;">
+                        <a name="home10_more_info_mob" href="https://www.swinton.co.uk/email/home-insurance-offer/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                        target="_blank">
+                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_more-info-btn.jpg'
+                          alt="" width="254" style="display: block; height: auto;">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              <!--<![endif]-->
+              <!-- terms start -->
+              <table width="100%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0"
+              class="wk-mobhide">
+                <tr>
+                  <td bgcolor="#ffffff" align="center">
+                    <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_terms.png'
+                    width="330" alt="T&C's" border="0" style="display:block; height: auto; margin: 0 auto">
+                  </td>
+                </tr>
+              </table>
+              <table width="90%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0"
+              class="wk-mobhide">
+                <tr>
+                  <td height="20"></td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-top: 10px;padding:0;margin:0px 0px 0px 0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px; text-align: left"> <strong>10% off home insurance terms and conditions:</strong>
+
+                    <br/>This introductory offer applies to new policies only. The discount applies to
+                    home insurance at the same address where there is an existing car insurance policy
+                    through Swinton Insurance. The 10% discount is applied to the Insurer Premium only
+                    and does not apply to fees and charges or optional extras e.g. Home Emergency Protection.
+                    This offer is not available for landlords policies, policies generated online through
+                    Price Comparison sites or through Swinton.co.uk and cannot be used in conjunction
+                    with other offers or discounts and does not apply to any subsequent changes to
+                    a policy. You must call or visit us in branch to receive this offer and quote 'HOME-LOYAL10'
+                    at the start of your conversation. Promotion can be withdrawn at any time.</td>
+                </tr>
+              </table>
+              <!--[if !mso]>
+                <!-->
+                <div class="wk-css" style="display:none;max-height:0px;overflow:hidden;">
+                  <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333">
+                    <tr class="contents" style="width:100%;text-align:left">
+                      <td align="center" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td>
+                              <div class="accordion-wrapper">
+                                <div class="half">
+                                  <div class="tab" style="padding-top: 20px;">
+                                    <input id="tab-two" type="checkbox" name="tabs">
+                                    <label for="tab-two" style="background-color: #ffffff; font-family:Tahoma, Geneva, Arial, sans-serif; font-size: 18px; text-align: center">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_terms.png'
+                                      width="330" alt="T&C's" border="0" style="display:block; height: auto; margin: 0 auto">
+                                    </label>
+                                    <div class="tab-content" style="background-color: #ffffff">
+                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td align="center" style="padding-top:10px;padding-bottom:10px;">
+                                            <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;"> <strong>10% off home insurance terms and conditions:</strong>
+
+                                                  <br/>This introductory offer applies to new policies only. The discount applies to
+                                                  home insurance at the same address where there is an existing car insurance policy
+                                                  through Swinton Insurance. The 10% discount is applied to the Insurer Premium only
+                                                  and does not apply to fees and charges or optional extras e.g. Home Emergency Protection.
+                                                  This offer is not available for landlords policies, policies generated online through
+                                                  Price Comparison sites or through Swinton.co.uk and cannot be used in conjunction
+                                                  with other offers or discounts and does not apply to any subsequent changes to
+                                                  a policy. You must call or visit us in branch to receive this offer and quote 'HOME-LOYAL10'
+                                                  at the start of your conversation. Promotion can be withdrawn at any time.</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              <!--<![endif]-->
+            </td>
+          </tr>
+          <!-- END COPY MODULE 1COL -->
+          <tr>
+            <td bgcolor="#ffffff" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="wk-mobhide">
+                <tr class="outer">
+                  <td bgcolor="#ffffff" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                    <table class="mobhide" width="100%" bgcolor="#a01976" border="0" cellspacing="0"
+                    cellpadding="0">
+                      <tr>
+                        <td align="center">
+                          <a href="https://www.swinton.co.uk/email/home-insurance-offer/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          name="look_after_your_home" target="_blank">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_look-after-your-home.jpg'
+                            alt="" width="640" style="border:0;display:block;border-width:0;height:auto;">
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- home Emergency fallback start -->
+                      <tr>
+                        <td style="padding:0;">
+                          <a name="home_fala" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                          target="_blank">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-title-fallback.jpg'
+                            width="640" style="border:0;display:block;border-width:0;height:auto;" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:24px; line-height: normal;">
+                          <a name="home_fala2" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                          target="_blank" style="color:#ffffff; text-decoration: none;">10% of all new home insurance customers
+                            <br/>paid £121 or less for buildings and
+                            <br/>contents combined between 1st May and
+                            <br/>31st October 2018.</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:18px; line-height: normal;padding-top: 20px;">
+                          <a name="home_fala3" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                          target="_blank" style="color:#ffffff; text-decoration: none;">Premiums are based on individual
+                            <br/>circumstances and excludes optional extras.</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                          <a href="tel:08009544941" target="_blank" name="tel_08009544941_4">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_home-insurance-call-08009544941-fallback.jpg'
+                            width="640" style="border:0;display:block;border-width:0;height:auto;" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                          <a name="home_quote" href="https://secure.swinton.co.uk/hc/newbus/assumptions?qsid=newbus&PolicyType=HC&brandName=default/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          target="_blank">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-online-quote-fallback.jpg'
+                            width="640" style="border:0;display:block;border-width:0;height:auto;" />
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- home Emergency fallback end -->
+                    </table>
+                    <table class="mobhide" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="center" style="padding-top: 20px;">
+                          <a href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          name="break_or_burst" target="_blank">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_break-or-bust.jpg'
+                            alt="" width="640" style="border:0;display:block;border-width:0;height:auto;">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="mobhide" width="100%" bgcolor="#a01976" border="0" cellspacing="0"
+                    cellpadding="0">
+                      <!-- multicar fallback start -->
+                      <tr>
+                        <td style="padding:0;">
+                          <a name="home_emer" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          target="_blank">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-title-fallback.jpg'
+                            width="640" style="border:0;display:block;border-width:0;height:auto;" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:24px; line-height: normal;">
+                          <a name="home_emer2" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          target="_blank" style="color:#ffffff; text-decoration: none;">Cover can only be purchased alongside
+                            <br/>Swinton home insurance but can be
+                            <br/>added to a policy at any time.</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:18px; line-height: normal;padding-top: 20px;">
+                          <a name="home_emer3" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          target="_blank" style="color:#ffffff; text-decoration: none;">Excludes finance charge for customers paying
+                            <br/>monthly. No claims can be made within the first
+                            <br/>two weeks.</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                          <a href="tel:08009544941" target="_blank" name="tel_08009544941_5">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_home-insurance-call-08009544941-fallback.jpg'
+                            width="640" style="border:0;display:block;border-width:0;height:auto;" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                          <a name="hep_info_mob" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          target="_blank">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-more-info-2-fallback.jpg'
+                            width="640" style="border:0;display:block;border-width:0;height:auto;" />
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- multicar fallback end -->
+                    </table>
+                    <!--[if !mso]>
+                      <!-->
+                      <div class="mobile" style="display:none;max-height:0px;overflow:hidden;">
+                        <table width="100%" border="0" bgcolor="#9e1a76" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td style="padding:0;">
+                              <a href="https://www.swinton.co.uk/email/home-insurance-offer/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              name="look_after_your_home_mob" target="_blank">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_look-after-your-home-mob.jpg'
+                                width="330" style="border:0;display:block;border-width:0;height:auto;" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0;">
+                              <a name="home_fala_mob" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                              target="_blank" style="color:#ffffff; text-decoration: none;">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-title-fallback-mob.jpg'
+                                width="330" style="border:0;display:block;border-width:0;height:auto;" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:17px; line-height: normal;">
+                              <a name="home_fala2_mob" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                              target="_blank" style="color:#ffffff; text-decoration: none;">10% of all new home insurance
+                                <br/>customers paid £121 or less for
+                                <br/>buildings and contents combined
+                                <br/>between 1st May and 31st
+                                <br/>October 2018.</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:12px; line-height: normal;padding-top: 20px;">
+                              <a name="home_fala3_mob" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                              target="_blank" style="color:#ffffff; text-decoration: none;">Premiums are based on individual
+                                <br/>circumstances and excludes optional extras.</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                              <a href="tel:08009544941" target="_blank" name="tel_08009544941_6">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-call-08009544900-fallback-mob.jpg'
+                                width="330" style="border:0;display:block;border-width:0;height:auto;" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                              <a name="home_quote_mob" href="https://secure.swinton.co.uk/hc/newbus/assumptions?qsid=newbus&PolicyType=HC&brandName=default/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              target="_blank">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-online-quote-fallback-mob.jpg'
+                                width="330" style="border:0;display:block;border-width:0;height:auto;" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0;">
+                              <a href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              name="break_or_burst_mob" target="_blank">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_break-or-bust-mob.jpg'
+                                width="330" style="border:0;display:block;border-width:0;height:auto;" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0;">
+                              <a name="home_emer_mob" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              target="_blank">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-title-fallback-mob.jpg'
+                                width="330" style="border:0;display:block;border-width:0;height:auto;" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:17px; line-height: normal;">
+                              <a name="home_emer2_mob" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              target="_blank" style="color:#ffffff; text-decoration: none;">Cover can only be purchased
+                                <br/>alongside Swinton home insurance
+                                <br/>but can be added to a policy at
+                                <br/>any time.</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:12px; line-height: normal;padding-top: 20px;">
+                              <a name="home_emer3_mob" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              target="_blank" style="color:#ffffff; text-decoration: none;">Excludes finance charge for customers
+                                <br/>paying monthly. No claims can be made
+                                <br/>within the first two weeks.</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                              <a href="tel:08009544941" target="_blank" name="tel_08009544941_7">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-call-08009544900-fallback-mob.jpg'
+                                width="330" style="border:0;display:block;border-width:0;height:auto;" />
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                              <a name="hep_info_mob_mob" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              target="_blank">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-more-info-2-fallback-mob.jpg'
+                                width="330" style="border:0;display:block;border-width:0;height:auto;" />
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+              <!--[if !mso]>
+                <!-->
+                <div class="wk-css" style="display:none;max-height:0px;overflow:hidden;">
+                  <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333">
+                    <tr class="contents" style="width:100%;text-align:left">
+                      <td align="center" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td align="center">
+                              <!-- ******************************************** START CSS HERE ********************************************
+                              -->
+                              <article id="slider" name="Anchor_2">
+                                <input checked type="radio" name="slider" id="slide2" />
+                                <input type="radio" name="slider" id="slide1" />
+                                <input type="radio" name="slider" id="slide3" />
+                                <div id="slides">
+                                  <div id="container">
+                                    <div class="inner">
+                                      <article>
+                                        <!-- desk start -->
+                                        <a name="home_fala_slide" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-title.jpg'
+                                          class="hidden-mob" width="640" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <a name="home_fala_slide2" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-copy.jpg'
+                                          class="hidden-mob" width="640" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <a name="home_call" href="tel:08009544941" target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_home-insurance-call-08009544941.jpg'
+                                          class="hidden-mob" width="640" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <a name="home_quote_mi" href="https://secure.swinton.co.uk/hc/newbus/assumptions?qsid=newbus&PolicyType=HC&brandName=default/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-online-quote.jpg'
+                                          class="hidden-mob" width="640" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <!-- desk end -->
+                                        <!-- mobile start -->
+                                        <a name="home_fala_slide_mob" href="https://www.swinton.co.uk/home-insurance/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhome&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-title-mob.jpg'
+                                          class="hidden-desk" width="330" style="padding: 0;border: 0;height: auto;">
+                                        </a>
+                                        <a name="home_call_mob" href="tel:08009544941" target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-call-mob.jpg'
+                                          class="hidden-desk" width="330" style="padding: 0;border: 0;height: auto;">
+                                        </a>
+                                        <a name="home_quote_mi_mob" href="https://secure.swinton.co.uk/hc/newbus/assumptions?qsid=newbus&PolicyType=HC&brandName=default/?aff=email/crosssales/Januaryaps19/home&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-insurance-online-quote-mob.jpg'
+                                          class="hidden-desk" width="330" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <!-- mobile end -->
+                                      </article>
+                                      <article name="Anchor_3">
+                                        <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_saveSlider-mid.jpg'
+                                        class="hidden-mob" width="640" height="657" style="padding: 0;border: 0;">
+                                        <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_saveSlider-mid-mob.jpg'
+                                        class="hidden-desk" width="330" height="423" style="padding: 0;border: 0;">
+                                      </article>
+                                      <article>
+                                        <!-- desk start -->
+                                        <a name="home_emer_headline" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-title.jpg'
+                                          class="hidden-mob" width="640" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <a name="home_emer_text" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-copy.jpg'
+                                          class="hidden-mob" width="640" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <a name="home_emer_call" href="tel:08009544941" target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_home_fala-call-08009544941-QNTU.jpg'
+                                          class="hidden-mob" width="640" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <a name="home_emer__mi" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-mi.jpg'
+                                          class="hidden-mob" width="640" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <!-- desk end -->
+                                        <!-- mobile start -->
+                                        <a name="home_emer_headline_mob" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-title-mob.jpg'
+                                          class="hidden-desk" width="330" style="padding: 0;border: 0;height: auto;">
+                                        </a>
+                                        <a name="home_emer_call_mob_mob" href="tel:08009544941" target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-call-mob.jpg'
+                                          class="hidden-desk" width="330" style="padding: 0;border: 0;height: auto;">
+                                        </a>
+                                        <a name="hep_info_mob_2" href="https://www.swinton.co.uk/email/home-emergency-and-home-legal-cover/?aff=email/crosssales/Januaryaps19/homeemergency&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                        target="_blank" border="0">
+                                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_home-emergency-more-info-mob.jpg'
+                                          class="hidden-desk" width="330" style="padding: 0;border: 0; height: auto;">
+                                        </a>
+                                        <!-- mobile end -->
+                                      </article>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="commands">
+                                  <label for="slide1"></label>
+                                  <label for="slide2"></label>
+                                  <label for="slide3"></label>
+                                </div>
+                                <!-- <div id="active">
+                                                    <label for="slide1"></label>
+                                                    <label for="slide2"></label>
+                                                    <label for="slide3"></label> 
+                                                  </div> -->
+                              </article>
+                              <!-- ******************************************** END CSS HERE ********************************************
+                              -->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              <!--<![endif]-->
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center" class="ptb30" style="padding-top:50px;padding-bottom:50px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td class="font20" style="font-family: 'ITC Avant Garde Gothic Std' ,Tahoma, Geneva, Arial, sans-serif; color: #DE4A11; font-size: 37px; font-weight: bold;"
+                        align="center">Spend smart, drive smart.</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- extra piece of mind blocks - start -->
+          <tr>
+            <td bgcolor="#FFFFFF" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+              <table border="0" cellpadding="0" cellspacing="0" class="" width="100%">
+                <tr>
+                  <td align="center" style="padding-bottom:10px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobhide">
+                      <tr>
+                        <td width="242" align="center">
+                          <a href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          name="multi_car_left" target="_blank">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_multi-car-left.jpg'
+                            width="242" alt="" style="display:block; height:auto;">
+                          </a>
+                        </td>
+                        <td width="398" bgcolor="#30b3b3" align="center" valign="middle" style="vertical-align:middle">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" style="font-family: 'ITC Avant Garde Gothic Std' ,Tahoma, Geneva, Arial, sans-serif; color: #ffffff; font-size: 36px; font-weight: bold; line-height: 45px; ">
+                                <a name="multi_panel_text" href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                target="_blank" style="color:#ffffff; text-decoration: none;">Save 10%
+                                  <br/>with Multi-car
+                                  <br/>insurance.</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding-top: 30px;margin:0px 0px 0px 0px; font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:23px; line-height: 34px;">
+                                <a name="multi_panel_text" href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                target="_blank" style="color:#ffffff; text-decoration: none;">Taking out an additional car
+                                  <br/>policy with us is a smart move
+                                  <br/>because you'll save 10%.</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0; padding-top: 10px; margin:0px 0px 0px 0px; font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:17px; line-height: 25px;">
+                                <a name="multi_panel_text" href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                target="_blank" style="color:#ffffff; text-decoration: none;">This offer isn't available online, so call us
+                                  <br/>and quote MULTI-10 to claim.</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0; padding-top: 30px; margin:0px 0px 0px 0px; ">
+                                <a name="multi_panel_call" href="tel:08009544941" target="_blank">
+                                  <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_call-white-g-08009544941.jpg'
+                                  width="265" alt="" style="display: block; height: auto;">
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0; padding-top: 10px; margin:0px 0px 0px 0px; ">
+                                <a name="car_multicar_mi" href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                target="_blank">
+                                  <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_call-white-g-moreInfo.jpg'
+                                  width="265" alt="" style="display: block; height: auto;">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if !mso]>
+                      <!-->
+                      <div class="mobile" style="display:none;max-height:0px;overflow:hidden;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" width="131">
+                              <a href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              name="multi_car_left_mob" target="_blank">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_multi-car-left-mob.jpg'
+                                width="131" alt="" srcset="">
+                              </a>
+                            </td>
+                            <td align="left" width="199" bgcolor="#30b3b3" valign="top" style="vertical-align:top">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="center">
+                                    <a name="multi_car_text" href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    target="_blank">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_multi-car-p-top.jpg'
+                                      width="199" alt="" style="display:block; height:auto;">
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:18px; line-height: normal;">
+                                    <a name="multi_car_text_2" href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    target="_blank" style="color:#ffffff; text-decoration: none;">Taking out an
+                                      <br/>additional car policy
+                                      <br/>with us is a smart
+                                      <br/>move because you'll
+                                      <br/>save 10%.</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px; font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff;     font-size: 13px; line-height: 16px;">
+                                    <a name="multi_car_text2" href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    target="_blank" style="color:#ffffff; text-decoration: none;">This offer isn't available
+                                      <br/>online, so call us and quote
+                                      <br/>MULTI-10 to claim.</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px;">
+                                    <a name="multi_car_call" href="tel:08009544941" target="_blank">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_tap-to-g-call-btn.jpg'
+                                      alt="" width="167" style="display:block; height:auto;">
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px;">
+                                    <a name="multi_car_mi" href="https://www.swinton.co.uk/email/multicar-insurance-offer/?aff=email/crosssales/Januaryaps19/PMC&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    target="_blank">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_more-info-green-btn-mob.jpg'
+                                      alt="" width="167" style="display:block; height:auto;">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    <!--<![endif]-->
+                    <!-- terms start -->
+                    <table width="100%" border="0" bgcolor="#e4e4e4" cellpadding="0" cellspacing="0"
+                    class="wk-mobhide">
+                      <tr>
+                        <td bgcolor="#e4e4e4" align="center">
+                          <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_terms.png'
+                          width="330" alt="T&C's" border="0" style="display:block; height: auto; margin: 0 auto">
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="90%" border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0"
+                    class="wk-mobhide">
+                      <tr>
+                        <td height="20"></td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-top: 10px;padding:0;margin:0px 0px 0px 0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px; text-align: left">This introductory offer applies to new policies only. The 10% discount applies
+                          to second and subsequent car insurance policies where there is a car already insured
+                          at the same address through Swinton Insurance. The 10% discount is applied to the
+                          Insurer Premium only and does not apply to fees and charges or optional extras
+                          e.g. Breakdown Insurance. This offer is not available for policies or prices generated
+                          online through Price Comparison sites or through Swinton.co.uk, and cannot be used
+                          in conjunction with other offers or discounts and does not apply to any subsequent
+                          changes to a policy. You must call or visit us in branch to receive this offer
+                          and quote 'MULTI-10' at the start of your conversation. Promotion can be withdrawn
+                          at any time.</td>
+                      </tr>
+                    </table>
+                    <!--[if !mso]>
+                      <!-->
+                      <div class="wk-css" style="display:none;max-height:0px;overflow:hidden;">
+                        <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333">
+                          <tr class="contents" style="width:100%;text-align:left">
+                            <td align="center" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td>
+                                    <div class="accordion-wrapper">
+                                      <div class="half">
+                                        <div class="tab">
+                                          <input id="tab-one" type="checkbox" name="tabs">
+                                          <label for="tab-one" style="background-color: #e4e4e4; font-family:Tahoma, Geneva, Arial, sans-serif; font-size: 18px; text-align: center">
+                                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_terms.png'
+                                            width="330" alt="T&C's" border="0" style="display:block; height: auto; margin: 0 auto">
+                                          </label>
+                                          <div class="tab-content" style="background-color: #ffffff">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                              <tr>
+                                                <td align="center" style="padding-top:10px;padding-bottom:10px;">
+                                                  <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                      <td style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;">This introductory offer applies to new policies only. The 10% discount applies
+                                                        to second and subsequent car insurance policies where there is a car already insured
+                                                        at the same address through Swinton Insurance. The 10% discount is applied to the
+                                                        Insurer Premium only and does not apply to fees and charges or optional extras
+                                                        e.g. Breakdown Insurance. This offer is not available for policies or prices generated
+                                                        online through Price Comparison sites or through Swinton.co.uk, and cannot be used
+                                                        in conjunction with other offers or discounts and does not apply to any subsequent
+                                                        changes to a policy. You must call or visit us in branch to receive this offer
+                                                        and quote 'MULTI-10' at the start of your conversation. Promotion can be withdrawn
+                                                        at any time.</td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-bottom:10px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobhide">
+                      <tr>
+                        <td width="242" align="center">
+                          <a href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                          ame="breakdown_left" target="_blank" name="www_swinton_co_uk_email_breakdown_c">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_breakdown-left.jpg'
+                            width="242" alt="" style="display:block; height:auto;">
+                          </a>
+                        </td>
+                        <td width="398" bgcolor="#31b3b3" align="center" valign="top" style="vertical-align:top">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td align="center" valign="top" style="vertical-align:top">
+                                <a href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                name="breakdown_panel_text" target="_blank">
+                                  <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_breakdown-top.jpg'
+                                  width="398" alt="" style="display:block; height:auto;">
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0;margin:0px 0px 0px 0px; font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:23px; line-height: 34px;">
+                                <a href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                name="breakdown_panel_text2" target="_blank" style="color:#ffffff; text-decoration: none;">This cover can be added to
+                                  <br/>your existing Swinton car
+                                  <br/>insurance policy at any time.</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0; padding-top: 10px; margin:0px 0px 0px 0px; font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:17px; line-height: 25px;">
+                                <a href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                name="breakdown_panel_text3" target="_blank" style="color:#ffffff; text-decoration: none;">Excludes finance charge
+                                  <br/>for customers paying monthly.</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0; padding-top: 10px; margin:0px 0px 0px 0px; font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:17px; line-height: 25px;">
+                                <a href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                name="breakdown_panel_text4" target="_blank" style="color:#ffffff; text-decoration: none;">Cover is restricted to Roadside Breakdown
+                                  <br/>for the first 24 hours of the policy.</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0; padding-top: 20px; margin:0px 0px 0px 0px; ">
+                                <a href="tel:08009544941" name="home_emergency_call" target="_blank">
+                                  <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_call-white-g-08009544941.jpg'
+                                  width="265" alt="" style="display: block; height: auto;">
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="padding:0; padding-top: 10px; margin:0px 0px 0px 0px; ">
+                                <a href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                name="breakdown_info" target="_blank">
+                                  <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_call-white-g-moreInfo.jpg'
+                                  width="265" alt="" style="display: block; height: auto;">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if !mso]>
+                      <!-->
+                      <div class="mobile" style="display:none;max-height:0px;overflow:hidden;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" width="131">
+                              <a href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                              name="breakdown_left_mob" target="_blank">
+                                <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_breakdown-left-mob.jpg'
+                                width="131" alt="" srcset="">
+                              </a>
+                            </td>
+                            <td align="left" width="199" bgcolor="#30b3b3" valign="top" style="vertical-align:top">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="center">
+                                    <a href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    name="breakdown_panel_mob" target="_blank">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_breakdown-top-mob.jpg'
+                                      width="199" alt="" style="display:block; height:auto;">
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:18px; line-height: normal;">
+                                    <a name="breakdown_panel2_mob" href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    target="_blank" style="color:#ffffff; text-decoration: none;">This cover can be
+                                      <br/>added to your existing
+                                      <br/>Swinton car insurance
+                                      <br/>policy at any time.</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px; font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:14px; line-height: 16px;">
+                                    <a name="breakdown_panel3_mob" href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    target="_blank" style="color:#ffffff; text-decoration: none;">Excludes finance
+                                      <br/>charge for customers
+                                      <br/>paying monthly.</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px; font-family:Tahoma, Geneva, Arial, sans-serif; color:#ffffff; font-size:14px; line-height: 16px;">
+                                    <a name="breakdown_panel4_mob" href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    target="_blank" style="color:#ffffff; text-decoration: none;">Cover is restricted to
+                                      <br/>Roadside Breakdown for the
+                                      <br/>first 24 hours of the policy.</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px;">
+                                    <a name="home_emergency_call" href="tel:08009544941" target="_blank">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_tap-to-g-call-btn.jpg'
+                                      alt="" width="167" style="display:block; height:auto;">
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding-top: 10px;">
+                                    <a name="breakdown_info_mob" href="https://www.swinton.co.uk/email/breakdown-cover/?aff=email/crosssales/Januaryaps19/breakdown&utm_source=JANUARYCSAPS19&utm_medium=Email&utm_campaign=carapsresend&utm_source=SilverpopMailing&utm_medium=email&utm_campaign=Test - 21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2 (1)&utm_content="
+                                    target="_blank">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_more-info-green-btn-mob.jpg'
+                                      alt="" width="167" style="display:block; height:auto;">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- extra piece of mind blocks - end -->
+          <!-- BEGIN MODULE S/H -->
+          <tr>
+            <td bgcolor="#FFFFFF" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+              <table border="0" cellpadding="0" cellspacing="0" class="mobhide" width="100%">
+                <tr>
+                  <td align="center" style="padding-top:15px;padding-bottom:25px;padding-right:28px;padding-left:28px;">
+                    <table width="572" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td style="padding-top:0px;padding-bottom:14px;padding-right:0px;padding-left:0px;border-bottom:2px #DE4A11 solid;"
+                        align="center">
+                          <a href="https://uk.trustpilot.com/review/www.swinton.co.uk" target="_blank" name="trustpilot_footer">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_trustpilot.png'
+                            alt="Swinton" width="572" style="border:0; display:block; border-width:0; height: auto;"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding-top:0px;padding-bottom:30px;padding-right:30px;padding-left:30px;">
+                    <table width="572" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="left" width="134">
+                          <a href="https://www.swinton.co.uk/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhomeemergency&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                          name="bottom_nav_homepage" target="_blank" style="">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_click-footer.png'
+                            alt="" width="134" style="border:0; display:block; border-width:0; height: auto;"
+                            />
+                          </a>
+                        </td>
+                        <td align="left" width="126">
+                          <a href="tel:08009544941" target="_blank" style="" name="tel_08009544941_8">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_call-footer-08009544941.png'
+                            alt="" width="126" style="border:0; display:block; border-width:0; height: auto;"
+                            />
+                          </a>
+                        </td>
+                        <td align="right" width="312">
+                          <a href="https://www.swinton.co.uk/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhomepage&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                          name="footer_logo" target="_blank" style="">
+                            <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_swinton-logo-footer.png'
+                            alt="Swinton" width="165" style="border:0;display:block;border-width:0; height: auto;">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!--[if !mso]>
+                <!-->
+                <div class="mobile" style="display:none;max-height:0px;overflow:hidden;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="center" style="padding-top:0px; padding-bottom:0px; padding-left:0px; padding-right:0px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td style="padding-top:10px;padding-bottom:24px;padding-right:0px;padding-left:0px; border-bottom:2px #DE4A11 solid;"
+                                  align="center">
+                                    <a href="https://uk.trustpilot.com/review/www.swinton.co.uk" target="_blank" name="trustpilot_footer">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_trustpilot-mob.png'
+                                      alt="Swinton" width="302" style="border:0;display:block;border-width:0; height: auto"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="padding-top:14px;">
+                              <table align="center" width="302" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;"
+                              width="100%">
+                                <tr>
+                                  <td align="center" style="padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;"
+                                  valign="top">
+                                    <a href="https://www.swinton.co.uk/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhomeemergency&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                    name="bottom_nav_homepage_2" target="_blank">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_click-footer-mob.png'
+                                      alt="" width="151" style="border:0;display:block;border-width:0;height: auto;"
+                                      />
+                                    </a>
+                                  </td>
+                                  <td align="center" style="padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;"
+                                  valign="top">
+                                    <a href="tel:08009544941" target="_blank" name="tel_08009544941_9">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images24012019_call-footer-08009544941-mob.png'
+                                      alt="" width="151" style="border:0;display:block;border-width:0;height: auto;"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan="2" align="center" style="padding-top:10px;padding-bottom:20px;">
+                                    <a href="https://www.swinton.co.uk/?aff=email%2Fcrosssales%2FJanuaryaps19%2Fhomepage&utm_campaign=Test+-+21806-01-02-CR-JAN-CS-CHALLENGER-CAR-RESEND-2+%281%29&utm_content=&utm_medium=email&utm_source=SilverpopMailing"
+                                    name="footer_logo" target="_blank">
+                                      <img src='http://contentz.mkt8966.com/ra/2019/21842/01/5025212/images_swinton-logo-footer-mob.png'
+                                      alt="Swinton" width="302" style="border:0;display:block;border-width:0; height: auto;"
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              <!--<![endif]-->
+            </td>
+          </tr>
+          <!-- END MODULE S/H -->
+          <!-- BEGIN MODULE 1COL -->
+          <tr>
+            <td align="center" style="padding-bottom:30px;">
+              <table width="572" border="0" cellspacing="0" cellpadding="0" class="w300">
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:4px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;"> <strong>Home insurance from as little as &pound;121 terms and conditions:</strong>
+
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;">10% of all new home insurance customers paid &pound;121 or less for buildings
+                    and contents combined, between the 1st of May 2018 and 31st of October 2018. Excludes
+                    optional extras. Premiums are based on individual circumstances.</td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:4px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;"> <strong>10% off home insurance terms and conditions:</strong>
+
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;">This introductory offer applies to new policies only. The discount applies to
+                    home insurance at the same address where there is an existing car insurance policy
+                    through Swinton Insurance. The 10% discount is applied to the Insurer Premium only
+                    and does not apply to fees and charges or optional extras e.g. Home Emergency Protection.
+                    This offer is not available for landlords policies, policies generated online through
+                    Price Comparison sites or through Swinton.co.uk and cannot be used in conjunction
+                    with other offers or discounts and does not apply to any subsequent changes to
+                    a policy. You must call or visit us in branch to receive this offer and quote 'HOME-LOYAL10'
+                    at the start of your conversation. Promotion can be withdrawn at any time.</td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;"> <strong>Home Emergency and Breakdown Assistance terms and conditions:</strong>
+
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;">Home Emergency and Breakdown Assistance are underwritten by Inter Partner SA Assistance
+                    UK Branch which is fully owned by the AXA Assistance Group.</td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;"> <strong>Save 10% with multicar insurance terms and conditions:</strong>
+
+                  </td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;">This introductory offer applies to new policies only. The 10% discount applies
+                    to second and subsequent car insurance policies where there is a car already insured
+                    at the same address through Swinton Insurance. The 10% discount is applied to the
+                    Insurer Premium only and does not apply to fees and charges or optional extras
+                    e.g. Breakdown Insurance. This offer is not available for policies or prices generated
+                    online through Price Comparison sites or through Swinton.co.uk, and cannot be used
+                    in conjunction with other offers or discounts and does not apply to any subsequent
+                    changes to a policy. You must call or visit us in branch to receive this offer
+                    and quote 'MULTI-10' at the start of your conversation. Promotion can be withdrawn
+                    at any time.</td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:10px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;">Lines are open Monday to Friday 8.30am to 8.30pm, Saturday 9am to 5pm and Sunday
+                    9am to 4pm. Calls are recorded for training and monitoring purposes. Swinton Group
+                    Limited, registered in England and Wales, registered number 756681 whose registered
+                    office is at: Embankment West Tower, 101 Cathedral Approach, Salford, M3 7FB. Authorised
+                    and regulated by the Financial Conduct Authority.</td>
+                </tr>
+                <tr valign="top">
+                  <td align="left" style="padding:0;margin:0px 0px 0px 0px; padding-top:0px; padding-bottom:0px;font-family:Tahoma, Geneva, Arial, sans-serif; color:#696868; font-size:11px;">To unsubscribe,
+                    <a href="http://www.pages06.net/swinton/unsub/unsub?spMailingID=5025212&spUserID=NTgwMjkxMzQ4NjkS1&spJobID=MTE5MjIzMzczNwS2&spReportId=MTE5MjIzMzczNwS2"
+                    target="_blank" style="color:#696868;" xt="LPWEBFORMOPTOUT" name="Unsub_2" xtwebform="1916297">click here</a>.</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- END MODULE 1COL -->
+          <!-- END BODY MODULES HERE -->
+          </table>
+          </td>
+          </tr>
+          </table>
+          <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+          <![endif]-->
+          </div>
+          </center>
+        </td>
+      </tr>
+    </table>
+    <!-- END MAIN BUILD -->
+    <IMG src="http://links.elink.sender.swinton.co.uk/open/log/5025212/NTgwMjkxMzQ4NjkS1/0/MTE5MjIzMzczNwS2/1/0"
+    style="display: none">
+  </body>
+
+</html>
